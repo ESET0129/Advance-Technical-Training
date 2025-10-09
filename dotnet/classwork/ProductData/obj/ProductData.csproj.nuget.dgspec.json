@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\smarthomedevicesystem\\smarthomedevicesystem.csproj": {}
+    "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\ProductData\\ProductData.csproj": {}
   },
   "projects": {
-    "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\smarthomedevicesystem\\smarthomedevicesystem.csproj": {
+    "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\ProductData\\ProductData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\smarthomedevicesystem\\smarthomedevicesystem.csproj",
-        "projectName": "smarthomedevicesystem",
-        "projectPath": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\smarthomedevicesystem\\smarthomedevicesystem.csproj",
+        "projectUniqueName": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\ProductData\\ProductData.csproj",
+        "projectName": "ProductData",
+        "projectPath": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\ProductData\\ProductData.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\smarthomedevicesystem\\obj\\",
+        "outputPath": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\ProductData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
