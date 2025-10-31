@@ -1,0 +1,100 @@
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\bin\Debug\net8.0\appsettings.Development.json
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\bin\Debug\net8.0\appsettings.json
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.staticwebassets.runtime.json
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.staticwebassets.endpoints.json
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.exe
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.deps.json
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.runtimeconfig.json
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.dll
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.pdb
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.GeneratedMSBuildEditorConfig.editorconfig
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.AssemblyInfoInputs.cache
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.AssemblyInfo.cs
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.csproj.CoreCompileInputs.cache
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.MvcApplicationPartsAssemblyInfo.cache
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.RazorAssemblyInfo.cache
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.RazorAssemblyInfo.cs
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\scopedcss\bundle\CollegeView.styles.css
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\scopedcss\projectbundle\CollegeView.bundle.scp.css
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.build.json
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.development.json
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.dll
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\refint\CollegeView.dll
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.pdb
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.genruntimeconfig.cache
+C:\Advance dotnet assignments\Assignment8\CollegeView\CollegeView\obj\Debug\net8.0\ref\CollegeView.dll
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\bin\Debug\net8.0\appsettings.Development.json
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\bin\Debug\net8.0\appsettings.json
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.staticwebassets.endpoints.json
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.staticwebassets.runtime.json
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.exe
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.deps.json
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.runtimeconfig.json
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.dll
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.pdb
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.GeneratedMSBuildEditorConfig.editorconfig
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.AssemblyInfoInputs.cache
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.AssemblyInfo.cs
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.csproj.CoreCompileInputs.cache
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.MvcApplicationPartsAssemblyInfo.cache
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.RazorAssemblyInfo.cache
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.RazorAssemblyInfo.cs
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\scopedcss\bundle\CollegeView.styles.css
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\scopedcss\projectbundle\CollegeView.bundle.scp.css
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.build.json
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.development.json
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.dll
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\refint\CollegeView.dll
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.pdb
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.genruntimeconfig.cache
+C:\Advance dotnet assignments\App\CollegeView\CollegeView\obj\Debug\net8.0\ref\CollegeView.dll
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\bin\Debug\net8.0\appsettings.Development.json
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\bin\Debug\net8.0\appsettings.json
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.staticwebassets.runtime.json
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.staticwebassets.endpoints.json
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.exe
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.deps.json
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.runtimeconfig.json
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.dll
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\bin\Debug\net8.0\CollegeView.pdb
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.GeneratedMSBuildEditorConfig.editorconfig
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.AssemblyInfoInputs.cache
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.AssemblyInfo.cs
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.csproj.CoreCompileInputs.cache
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.MvcApplicationPartsAssemblyInfo.cache
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.RazorAssemblyInfo.cache
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.RazorAssemblyInfo.cs
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\scopedcss\bundle\CollegeView.styles.css
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\scopedcss\projectbundle\CollegeView.bundle.scp.css
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.build.json
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.development.json
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets\msbuild.CollegeView.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets\msbuild.CollegeView.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets\msbuild.build.CollegeView.props
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CollegeView.props
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CollegeView.props
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.dll
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\refint\CollegeView.dll
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.pdb
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\CollegeView.genruntimeconfig.cache
+D:\Shantanu Swaraj\advance techinical training\Project\dotnet\CollegeView\CollegeView\obj\Debug\net8.0\ref\CollegeView.dll

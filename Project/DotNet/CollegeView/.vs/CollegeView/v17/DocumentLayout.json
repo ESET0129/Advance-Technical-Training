@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|d:\\shantanu swaraj\\advance techinical training\\project\\dotnet\\collegeview\\collegeview\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|solutionrelative:collegeview\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|d:\\shantanu swaraj\\advance techinical training\\project\\dotnet\\collegeview\\collegeview\\views\\course\\courseview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|solutionrelative:collegeview\\views\\course\\courseview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|d:\\shantanu swaraj\\advance techinical training\\project\\dotnet\\collegeview\\collegeview\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|solutionrelative:collegeview\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|d:\\shantanu swaraj\\advance techinical training\\project\\dotnet\\collegeview\\collegeview\\views\\student\\studentview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|solutionrelative:collegeview\\views\\student\\studentview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|d:\\shantanu swaraj\\advance techinical training\\project\\dotnet\\collegeview\\collegeview\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|solutionrelative:collegeview\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|d:\\shantanu swaraj\\advance techinical training\\project\\dotnet\\collegeview\\collegeview\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|solutionrelative:collegeview\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|d:\\shantanu swaraj\\advance techinical training\\project\\dotnet\\collegeview\\collegeview\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|solutionrelative:collegeview\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|d:\\shantanu swaraj\\advance techinical training\\project\\dotnet\\collegeview\\collegeview\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|solutionrelative:collegeview\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|d:\\shantanu swaraj\\advance techinical training\\project\\dotnet\\collegeview\\collegeview\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|solutionrelative:collegeview\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|d:\\shantanu swaraj\\advance techinical training\\project\\dotnet\\collegeview\\collegeview\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2DBDB54-67E5-4547-86B6-382FD0DBD9AF}|CollegeView\\CollegeView.csproj|solutionrelative:collegeview\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentView.cshtml",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Views\\Student\\StudentView.cshtml",
+              "RelativeDocumentMoniker": "CollegeView\\Views\\Student\\StudentView.cshtml",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Views\\Student\\StudentView.cshtml",
+              "RelativeToolTip": "CollegeView\\Views\\Student\\StudentView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T12:50:11.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CourseView.cshtml",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Views\\Course\\CourseView.cshtml",
+              "RelativeDocumentMoniker": "CollegeView\\Views\\Course\\CourseView.cshtml",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Views\\Course\\CourseView.cshtml",
+              "RelativeToolTip": "CollegeView\\Views\\Course\\CourseView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T12:49:13.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "CollegeView\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "CollegeView\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T14:20:50.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "CollegeView\\Controllers\\CourseController.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "CollegeView\\Controllers\\CourseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T12:41:55.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "CollegeView\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "CollegeView\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T12:42:28.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "CollegeView\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "CollegeView\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T12:43:33.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CollegeView\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CollegeView\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T14:20:58.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Program.cs",
+              "RelativeDocumentMoniker": "CollegeView\\Program.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Program.cs",
+              "RelativeToolTip": "CollegeView\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwB4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T13:02:50.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CollegeView\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CollegeView\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T14:20:46.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CollegeView\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\Project\\dotnet\\CollegeView\\CollegeView\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CollegeView\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T12:41:30.866Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
