@@ -1,0 +1,123 @@
+/* src/styles/Alerts.css */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%; /* Make it fill the page content area */
+}
+
+.page-container h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.alerts-layout {
+  display: flex;
+  flex: 1; /* Make the layout fill the remaining height */
+  gap: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden; /* Important for containing the scrolling list */
+}
+
+/* --- Left Column: List --- */
+.alerts-list-container {
+  flex-basis: 400px; /* Fixed width for the list */
+  border-right: 1px solid #e0e0e0;
+  overflow-y: auto; /* Make this column scrollable */
+  padding: 1rem;
+}
+
+.alert-date-header {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #777;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.alert-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #fcfcfc;
+  margin-bottom: 1rem;
+  border: 1px solid #eee;
+  transition: all 0.2s ease;
+}
+
+.alert-card:hover {
+  background-color: #f5f5f5;
+}
+
+.alert-card.active {
+  border: 2px solid #1976d2;
+  background-color: #f0f4ff;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
+}
+
+.alert-card-icon {
+  font-size: 1.25rem;
+  color: #555;
+  padding-top: 0.25rem;
+}
+
+.alert-card-content h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.alert-card-content p {
+  font-size: 0.875rem;
+  color: #555;
+  margin: 0.25rem 0 0;
+}
+
+/* --- Right Column: Details --- */
+.alerts-detail-container {
+  flex: 1; /* Take up the rest of the space */
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.alert-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.alert-detail-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.alert-detail-timestamp {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #777;
+  text-align: right;
+}
+
+.alert-detail-body {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Handle newlines in the body text */
+.alert-detail-body p {
+  margin-bottom: 1rem;
+}

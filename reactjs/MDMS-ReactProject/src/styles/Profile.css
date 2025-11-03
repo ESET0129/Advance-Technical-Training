@@ -1,0 +1,165 @@
+/* src/styles/Profile.css */
+
+.page-container h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* --- Tab Navigation --- */
+.tabs-nav {
+  display: flex;
+  gap: 3rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 2.5rem;
+}
+
+.tab-btn {
+  padding: 0.75rem 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #777;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  color: #6a1b9a; /* Purple color from design */
+  border-bottom-color: #6a1b9a;
+}
+
+/* --- Form Layout --- */
+.profile-form-container {
+  max-width: 450px;
+  margin: 0 auto; /* Center the form */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-avatar {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #333;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.avatar-edit-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.form-field label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6a1b9a;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-submit-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: #222;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+/* --- Notification Toggles --- */
+.notification-settings {
+  max-width: 450px;
+}
+
+.notification-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.notification-item label {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Simple Toggle Switch CSS */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 28px;
+  transition: .4s;
+}
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+input:checked + .toggle-slider {
+  background-color: #6a1b9a;
+}
+input:checked + .toggle-slider:before {
+  transform: translateX(22px);
+}

@@ -1,0 +1,174 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "user@example.com",
+      "password": "password123",
+      "role": "EndUser",
+      "name": "John Doe",
+      "mobile": "+91 9809892782",
+      "notificationPreferences": {
+        "email": true,
+        "sms": false,
+        "push": true
+      }
+    },
+    {
+      "id": 2,
+      "email": "zone@example.com",
+      "password": "password123",
+      "role": "ZoneLevel",
+      "name": "Jane Smith",
+      "zoneId": "Z-NORTH"
+    },
+    {
+      "id": 3,
+      "email": "admin@example.com",
+      "password": "password123",
+      "role": "EnterpriseLevel",
+      "name": "Admin"
+    }
+  ],
+  "meters": [
+    {
+      "id": "M-1001",
+      "userId": 1,
+      "zoneId": "Z-NORTH",
+      "status": "active",
+      "lastReading": 12050
+    },
+    {
+      "id": "M-1002",
+      "userId": 4,
+      "zoneId": "Z-NORTH",
+      "status": "active",
+      "lastReading": 8300
+    },
+    {
+      "id": "M-2001",
+      "userId": 5,
+      "zoneId": "Z-SOUTH",
+      "status": "inactive",
+      "lastReading": 1500
+    }
+  ],
+  "zones": [
+    {
+      "id": "Z-NORTH",
+      "name": "North Zone",
+      "adminId": 2
+    },
+    {
+      "id": "Z-SOUTH",
+      "name": "South Zone",
+      "adminId": 6
+    }
+  ],
+  "bills": [
+    {
+      "id": 1,
+      "userId": 1,
+      "month": "Sep 2025",
+      "amount": 1230.0,
+      "dueDate": "12 Oct 2025",
+      "status": "Pending",
+      "details": [
+        {
+          "date": "01 Sep 2025",
+          "reading": "25 kWh",
+          "consumption": "25 kWh",
+          "cost": 120
+        },
+        {
+          "date": "02 Sep 2025",
+          "reading": "52 kWh",
+          "consumption": "27 kWh",
+          "cost": 135
+        },
+        {
+          "date": "03 Sep 2025",
+          "reading": "78 kWh",
+          "consumption": "26 kWh",
+          "cost": 130
+        }
+      ],
+      "totalReading": "1500 kWh",
+      "totalConsumption": "246 kWh"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "month": "Aug 2025",
+      "amount": 1150.0,
+      "dueDate": "12 Sep 2025",
+      "status": "Paid"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "month": "Jul 2025",
+      "amount": 1210.0,
+      "dueDate": "12 Aug 2025",
+      "status": "Paid"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "month": "Jun 2025",
+      "amount": 1180.0,
+      "dueDate": "12 Jul 2025",
+      "status": "Paid"
+    }
+  ],
+  "alerts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Unusual High Consumption Detected",
+      "description": "Your consumption was 50% higher than your weekly average.",
+      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n\nIt has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "date": "2025-05-05T06:15:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "Payment Received",
+      "description": "Your payment of ₹1150.00 for August 2025 was successful.",
+      "body": "Thank you for your payment. Your bill for August 2025 has been marked as paid. Your payment of ₹1150.00 was processed successfully on 10 Sep 2025.",
+      "date": "2025-05-05T04:20:00Z"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "title": "New Bill Generated",
+      "description": "Your new bill for September 2025 is ready.",
+      "body": "Your bill for the month of September 2025 has been generated. The total amount due is ₹1230.00 and is payable by 12 Oct 2025.",
+      "date": "2025-05-03T09:00:00Z"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "title": "Payment Due Reminder",
+      "description": "Your bill for August 2025 is due in 3 days.",
+      "body": "This is a friendly reminder that your payment for the August 2025 bill is due on 12 Sep 2025. Please pay to avoid late fees.",
+      "date": "2025-05-03T08:00:00Z"
+    }
+  ],
+  "zoneStats": {
+    "Z-NORTH": {
+      "activeMeters": 256,
+      "avgUsage": "55%",
+      "pendingAlerts": 26,
+      "analytics": {
+        "week": {
+          "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+          "data": [300, 350, 280, 380, 370, 430, 390]
+        },
+        "month": {
+          "labels": ["Week 1", "Week 2", "Week 3", "Week 4"],
+          "data": [2100, 2450, 1960, 2660]
+        }
+      }
+    }
+  }
+}
