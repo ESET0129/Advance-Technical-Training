@@ -3,7 +3,7 @@ import { useAuthStore } from '../store/authStore';
 import { useLogger } from '../hooks/useLogger';
 import { Line } from 'react-chartjs-2';
 
-import StatCard from '../components/StatCard';
+import StatCard from '../component/StatCard';
 import '../styles/Dashboard.css';
 import apiClient from '../services/apiClient';
 

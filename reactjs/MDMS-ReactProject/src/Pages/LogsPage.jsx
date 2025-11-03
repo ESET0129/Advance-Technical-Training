@@ -19,9 +19,11 @@ export default function LogsPage() {
     <div>
       <h1>Local Logs (IndexedDB)</h1>
       <p>This page displays all logs captured in your local browser storage.</p>
+      
       <pre style={{ 
-        background: '#f4f4f4', 
-        border: '1px solid #ccc', 
+        background: 'var(--color-background-secondary)', 
+        border: '1px solid var(--color-border)',
+        color: 'var(--color-text-primary)',
         padding: '1rem', 
         maxHeight: '60vh', 
         overflow: 'auto',

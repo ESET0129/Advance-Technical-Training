@@ -1,0 +1,90 @@
+/* src/styles/Theme.css */
+
+/* We will apply a 'data-theme' attribute to the <html> tag.
+  These variables will change based on that attribute.
+*/
+
+:root[data-theme="light"] {
+  --color-background: #fcfcfa;        /* Main page background */
+  --color-background-secondary: #f4f4f4; /* Sidebar, auth forms */
+  --color-background-card: #ffffff;   /* Cards, tables, inputs */
+  --color-border: #e0e0e0;            /* Light borders */
+  --color-text-primary: #333333;      /* Main text */
+  --color-text-secondary: #777777;    /* Lighter text */
+  --color-text-header: #ffffff;       /* Text on primary-color bg */
+  --color-primary: #1976d2;           /* Main blue */
+  --color-primary-dark: #1565c0;
+  --color-accent: #6a1b9a;            /* Profile purple */
+}
+
+:root[data-theme="dark"] {
+  --color-background: #121212;        /* Main page background */
+  --color-background-secondary: #1e1e1e; /* Sidebar, auth forms */
+  --color-background-card: #2c2c2c;   /* Cards, tables, inputs */
+  --color-border: #444444;            /* Dark borders */
+  --color-text-primary: #f5f5f5;      /* Main text */
+  --color-text-secondary: #aaaaaa;    /* Lighter text */
+  --color-text-header: #ffffff;       /* Text on primary-color bg */
+  --color-primary: #1e88e5;           /* Lighter blue for dark mode */
+  --color-primary-dark: #1976d2;
+  --color-accent: #ab47bc;            /* Lighter purple for dark mode */
+}
+
+/* Create a new CSS file for our toggle components 
+  (or add this to an existing file like Profile.css)
+*/
+
+/* --- Theme Toggle Switch --- */
+.theme-toggle-btn {
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  width: 50px;
+  height: 28px;
+}
+
+.theme-toggle-icon {
+  color: #f1c40f; /* Sun yellow */
+  line-height: 0;
+}
+
+.theme-toggle-icon.moon {
+  color: #f39c12; /* Moon orange */
+}
+
+.theme-toggle-ball {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  height: 20px;
+  width: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.theme-toggle-btn[data-theme="dark"] .theme-toggle-ball {
+  transform: translateX(22px);
+}
+
+/* --- Language Selector --- */
+.language-selector {
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* For dark mode, dropdown options are still light */
+.language-selector option {
+  background: #ffffff;
+  color: #333333;
+}

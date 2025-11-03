@@ -1,18 +1,20 @@
 import { Outlet, Link } from 'react-router-dom';
 import '../styles/Auth.css';
+import ThemeToggle from './ThemeToggle'; 
+import LanguageSelector from './LanguageSelector'; 
 
-const ThemeToggle = () => {
-  return <div className="theme-toggle"></div>;
-};
+// const ThemeToggle = () => {
+//   return <div className="theme-toggle"></div>;
+// };
 
-const LanguageSelector = () => {
-  return (
-    <select className="lang-select" defaultValue="en">
-      <option value="en">en</option>
-      <option value="es">es</option>
-    </select>
-  );
-};
+// const LanguageSelector = () => {
+//   return (
+//     <select className="lang-select" defaultValue="en">
+//       <option value="en">en</option>
+//       <option value="hi">hi</option>
+//     </select>
+//   );
+// };
 
 export default function AuthLayout() {
   return (

@@ -10,14 +10,15 @@ import AlertsPage from './pages/AlertsPage';
 import ProfilePage from './pages/ProfilePage';
 import LogsPage from './pages/LogsPage';
 
-import MainLayout from './components/MainLayout';
-import AuthLayout from './components/AuthLayout';
-import ProtectedRoute from './components/ProtectedRoute';
-import PublicRoute from './components/PublicRoute';
-import ErrorBoundary from './components/ErrorBoundary';
+import MainLayout from './component/MainLayout';
+import AuthLayout from './component/AuthLayout';
+import ProtectedRoute from './component/ProtectedRoute';
+import PublicRoute from './component/PublicRoute';
+
+import ErrorBoundary from './component/ErrorBoundary';
 
 // Utility Pages
-import NotFoundPage from './pages/utility/NotFoundPage';
+import NotFoundPage from './Pages/utility/NotFoundPage';
 import ServerErrorPage from './pages/utility/ServerErrorPage';
 import AccessDeniedPage from './pages/utility/AccessDeniedPage';
 import MaintenancePage from './pages/utility/MaintenancePage';

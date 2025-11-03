@@ -1,0 +1,30 @@
+{
+  "appName": "एमडीएमएस",
+  "login": {
+    "title": "लॉगिन फॉर्म",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "rememberMe": "मुझे याद रखना",
+    "forgotPassword": "पासवर्ड भूल गए",
+    "button": "लॉग इन करें",
+    "testUsers": "परीक्षण उपयोगकर्ता:",
+    "passwordLabel": "पासवर्ड:"
+  },
+  "logout": "लॉग आउट",
+  "dashboard": {
+    "title": "डैशबोर्ड",
+    "welcome": "स्वागत है, {{name}}"
+  },
+  "sidebar": {
+    "dashboard": "डैशबोर्ड",
+    "bills": "बिल और भुगतान",
+    "meterData": "मीटर डेटा",
+    "alerts": "अलर्ट और सूचनाएं",
+    "profile": "प्रोफ़ाइल और सेटिंग्स",
+    "logs": "लॉग्स",
+    "meterManagement": "मीटर प्रबंधन",
+    "userManagement": "उपयोगकर्ता प्रबंधन",
+    "reports": "रिपोर्ट और विश्लेषिकी",
+    "settings": "सेटिंग और सूचनाएं"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "appName": "MDMS",
+  "login": {
+    "title": "Login Form",
+    "email": "email",
+    "password": "password",
+    "rememberMe": "remember me",
+    "forgotPassword": "forgot password",
+    "button": "login",
+    "testUsers": "Test Users:",
+    "passwordLabel": "Password:"
+  },
+  "logout": "Logout",
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome, {{name}}"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "bills": "Bills & Payments",
+    "meterData": "Meter Data",
+    "alerts": "Alerts & Notifications",
+    "profile": "Profile & Settings",
+    "logs": "Logs",
+    "meterManagement": "Meter management",
+    "userManagement": "User management",
+    "reports": "Reports & Analytics",
+    "settings": "Setting & Notifications"
+  }
+}

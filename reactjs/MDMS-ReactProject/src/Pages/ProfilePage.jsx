@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { useLogger } from '../hooks/useLogger';
 import '../styles/Profile.css';
 
-import ProfileTab from '../components/ProfileTab';
-import SecurityTab from '../components/SecurityTab';
-import NotificationTab from '../components/NotificationTab';
+import ProfileTab from '../component/ProfileTab';
+import SecurityTab from '../component/SecurityTab';
+import NotificationTab from '../component/NotificationTab';
 
 export default function ProfilePage() {
   const { logInfo } = useLogger();
