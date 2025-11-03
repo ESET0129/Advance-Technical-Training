@@ -4,34 +4,34 @@ export default function ZoneConsumption() {
   // Sample data for different zones with additional data
   const zoneData = {
     2025: {
-      Mangalore: 85,
-      Bejai: 65,
-      Pumpwell: 45,
+      Mangalore: 125,
+      Bejai: 100,
+      Pumpwell: 70,
       PVS: 75,
-      Kotekar: 30,
-      Surathkal: 55,
+      Kotekar: 40,
+      Surathkal: 65,
       Ullal: 40,
-      Bantwal: 35
+      Bantwal: 25
     },
     2024: {
-      Mangalore: 80,
-      Bejai: 60,
+      Mangalore: 180,
+      Bejai: 50,
       Pumpwell: 40,
-      PVS: 70,
-      Kotekar: 25,
+      PVS: 80,
+      Kotekar: 45,
       Surathkal: 50,
-      Ullal: 35,
+      Ullal: 45,
       Bantwal: 30
     },
     2023: {
-      Mangalore: 75,
-      Bejai: 55,
-      Pumpwell: 35,
-      PVS: 65,
+      Mangalore: 175,
+      Bejai: 155,
+      Pumpwell: 55,
+      PVS: 55,
       Kotekar: 20,
-      Surathkal: 45,
+      Surathkal: 85,
       Ullal: 30,
-      Bantwal: 25
+      Bantwal: 65
     },
     2022: {
       Mangalore: 70,

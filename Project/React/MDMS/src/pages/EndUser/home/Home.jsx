@@ -9,14 +9,14 @@ export default function Home() {
 
       <div className='flex items-center justify-between'>
         <div>
-          <div className='text-2xl font-bold mb-4'> Welcome , XYZ </div>
-          <div className='mb-1 dark:text-gray-300'>As of Oct 5, 2025</div>
-          <div className='dark:text-gray-300'>Zone : Bangalore North</div>
+          <div className='text-2xl font-bold mb-4'> Welcome , Shaan </div>
+          <div className='mb-1 dark:text-gray-300'>As of NOV 1, 2025</div>
+          <div className='dark:text-gray-300'>Zone : Centre</div>
         </div>
 
         <div className='text-right'>
-          <div className='mb-1 dark:text-gray-300'> Last Synced at 10:45 AM </div>
-          <div className='dark:text-gray-300'>Data Source: Smart Meter #1023</div>
+          <div className='mb-1 dark:text-gray-300'> Last Synced at .... </div>
+          <div className='dark:text-gray-300'>Data Source: Smart Meter #1 </div>
         </div>
       </div>
 
@@ -26,13 +26,13 @@ export default function Home() {
           <div className="mb-4 w-12 h-12 flex items-center justify-center text-blue-500 dark:text-blue-400">
             <FaRegClock className="w-8 h-8" />
           </div>
-          <div className='text-3xl dark:text-white'>256kWh</div>
+          <div className='text-3xl dark:text-white'>200kWh</div>
         </div>
         <div className='text-2xl font-bold border-2 border-gray-500 dark:border-gray-600 p-8 rounded-xl w-80 h-60 flex flex-col items-center justify-center bg-white dark:bg-gray-800'>
           <div className="mb-4 w-12 h-12 flex items-center justify-center text-blue-500 dark:text-blue-400">
             <FaRegClock className="w-8 h-8" />
           </div>
-          <div className='text-3xl dark:text-white'>1203 Due on 12 Oct</div>
+          <div className='text-3xl dark:text-white'>1050 Due on 30 Oct</div>
         </div>
         <div className='text-2xl font-bold border-2 border-gray-500 dark:border-gray-600 p-8 rounded-xl w-80 h-60 flex flex-col items-center justify-center bg-white dark:bg-gray-800'>
           <div className="mb-4 w-12 h-12 flex items-center justify-center text-blue-500 dark:text-blue-400">
@@ -47,7 +47,8 @@ export default function Home() {
           <div className="mb-4 w-12 h-12 flex items-center justify-center text-blue-500 dark:text-blue-400">
             <FaRegClock className="w-8 h-8" />
           </div>
-          <div className='text-3xl dark:text-white'>Paid 1200 on 10 Sep</div>
+
+          <div className='text-3xl dark:text-white'>Paid 1200 on 10 Octuber</div>
         </div>
       </div>
 

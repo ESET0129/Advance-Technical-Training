@@ -23,10 +23,10 @@ export default function Alerts() {
                     </div>
                     <div className='dark:text-gray-300'>
                         <div className='m-2'>
-                            05 May,2025
+                            05 September,2025
                         </div>
                         <div>
-                            06:15 PM
+                            06:00 PM
                         </div>
                     </div>
                 </div>
@@ -35,9 +35,7 @@ export default function Alerts() {
                     Odio voluptatibus quo quaerat quae perspiciatis pariatur sed laudantium 
                     voluptate ab sequi, quidem neque alias suscipit id voluptatem repellendus, 
                     natus corrupti hic.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Laborum eum praesentium quia nostrum ad possimus est culpa neque natus nemo.
-                    Iure saepe ducimus laborum vitae iste nihil molestias minima mollitia.
+                  
                 </div>
             </div>
         </div>
