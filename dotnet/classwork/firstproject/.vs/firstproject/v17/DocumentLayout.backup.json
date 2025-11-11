@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6E2AC1BD-77B8-472D-9EA9-72BD0BF074E5}|frontend\\frontend.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\frontend\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E2AC1BD-77B8-472D-9EA9-72BD0BF074E5}|frontend\\frontend.csproj|solutionrelative:frontend\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45131E89-BE14-4815-AD34-0363340B5CB0}|webserver\\webserver.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\webserver\\controllers\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45131E89-BE14-4815-AD34-0363340B5CB0}|webserver\\webserver.csproj|solutionrelative:webserver\\controllers\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45131E89-BE14-4815-AD34-0363340B5CB0}|webserver\\webserver.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\webserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45131E89-BE14-4815-AD34-0363340B5CB0}|webserver\\webserver.csproj|solutionrelative:webserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E2AC1BD-77B8-472D-9EA9-72BD0BF074E5}|frontend\\frontend.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E2AC1BD-77B8-472D-9EA9-72BD0BF074E5}|frontend\\frontend.csproj|solutionrelative:frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45131E89-BE14-4815-AD34-0363340B5CB0}|webserver\\webserver.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\webserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{45131E89-BE14-4815-AD34-0363340B5CB0}|webserver\\webserver.csproj|solutionrelative:webserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E2AC1BD-77B8-472D-9EA9-72BD0BF074E5}|frontend\\frontend.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\frontend\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E2AC1BD-77B8-472D-9EA9-72BD0BF074E5}|frontend\\frontend.csproj|solutionrelative:frontend\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45131E89-BE14-4815-AD34-0363340B5CB0}|webserver\\webserver.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\webserver\\models\\blazortutorialcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45131E89-BE14-4815-AD34-0363340B5CB0}|webserver\\webserver.csproj|solutionrelative:webserver\\models\\blazortutorialcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "student.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\frontend\\Model\\student.cs",
+              "RelativeDocumentMoniker": "frontend\\Model\\student.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\frontend\\Model\\student.cs",
+              "RelativeToolTip": "frontend\\Model\\student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T09:22:47.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\frontend\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "frontend\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\frontend\\Components\\Pages\\Home.razor*",
+              "RelativeToolTip": "frontend\\Components\\Pages\\Home.razor*",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T09:21:08.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\frontend\\Program.cs",
+              "RelativeDocumentMoniker": "frontend\\Program.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\frontend\\Program.cs",
+              "RelativeToolTip": "frontend\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T09:20:33.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\webserver\\Program.cs",
+              "RelativeDocumentMoniker": "webserver\\Program.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\webserver\\Program.cs",
+              "RelativeToolTip": "webserver\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwBAAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T09:02:42.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BlazorTutorialContext.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\webserver\\Models\\BlazorTutorialContext.cs",
+              "RelativeDocumentMoniker": "webserver\\Models\\BlazorTutorialContext.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\webserver\\Models\\BlazorTutorialContext.cs",
+              "RelativeToolTip": "webserver\\Models\\BlazorTutorialContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T08:59:15.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\webserver\\appsettings.json",
+              "RelativeDocumentMoniker": "webserver\\appsettings.json",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\webserver\\appsettings.json",
+              "RelativeToolTip": "webserver\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-10T08:55:24.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "student.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\webserver\\Controllers\\student.cs",
+              "RelativeDocumentMoniker": "webserver\\Controllers\\student.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\classwork\\firstproject\\webserver\\Controllers\\student.cs",
+              "RelativeToolTip": "webserver\\Controllers\\student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T08:49:38.074Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

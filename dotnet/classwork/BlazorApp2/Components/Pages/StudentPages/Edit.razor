@@ -1,0 +1,104 @@
+﻿@page "/students/edit"
+@using Microsoft.EntityFrameworkCore
+@using BlazorApp2.Model
+@inject IDbContextFactory<BlazorApp2.Data.BlazorApp2Context> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Edit</PageTitle>
+
+<h1>Edit</h1>
+
+<h2>Student</h2>
+<hr />
+@if (Student is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-4">
+            <EditForm method="post" Model="Student" OnValidSubmit="UpdateStudent" FormName="edit" Enhance>
+                <DataAnnotationsValidator />
+                <ValidationSummary role="alert"/>
+                <input type="hidden" name="Student.id" value="@Student.id" />
+                <div class="mb-3">
+                    <label for="name" class="form-label">name:</label>
+                    <InputText id="name" @bind-Value="Student.name" class="form-control" />
+                    <ValidationMessage For="() => Student.name" class="text-danger" />
+                </div>
+                <div class="mb-3">
+                    <label for="age" class="form-label">age:</label>
+                    <InputNumber id="age" @bind-Value="Student.age" class="form-control" />
+                    <ValidationMessage For="() => Student.age" class="text-danger" />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">email:</label>
+                    <InputText id="email" @bind-Value="Student.email" class="form-control" />
+                    <ValidationMessage For="() => Student.email" class="text-danger" />
+                </div>
+                <div class="mb-3">
+                    <label for="birthday" class="form-label">birthday:</label>
+                    <InputDate id="birthday" @bind-Value="Student.birthday" class="form-control" />
+                    <ValidationMessage For="() => Student.birthday" class="text-danger" />
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </EditForm>
+        </div>
+    </div>
+}
+
+<div>
+    <a href="/students">Back to List</a>
+</div>
+
+@code {
+    [SupplyParameterFromQuery]
+    private int id { get; set; }
+
+    [SupplyParameterFromForm]
+    private Student? Student { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+        Student ??= await context.Student.FirstOrDefaultAsync(m => m.id == id);
+
+        if (Student is null)
+        {
+            NavigationManager.NavigateTo("notfound");
+        }
+    }
+
+    // To protect from overposting attacks, enable the specific properties you want to bind to.
+    // For more information, see https://learn.microsoft.com/aspnet/core/blazor/forms/#mitigate-overposting-attacks.
+    private async Task UpdateStudent()
+    {
+        using var context = DbFactory.CreateDbContext();
+        context.Attach(Student!).State = EntityState.Modified;
+
+        try
+        {
+            await context.SaveChangesAsync();
+        }
+        catch (DbUpdateConcurrencyException)
+        {
+            if (!StudentExists(Student!.id))
+            {
+                NavigationManager.NavigateTo("notfound");
+            }
+            else
+            {
+                throw;
+            }
+        }
+
+        NavigationManager.NavigateTo("/students");
+    }
+
+    private bool StudentExists(int id)
+    {
+        using var context = DbFactory.CreateDbContext();
+        return context.Student.Any(e => e.id == id);
+    }
+}

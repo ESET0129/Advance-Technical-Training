@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "frontend", "frontend\frontend.csproj", "{6E2AC1BD-77B8-472D-9EA9-72BD0BF074E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webserver", "webserver\webserver.csproj", "{45131E89-BE14-4815-AD34-0363340B5CB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E2AC1BD-77B8-472D-9EA9-72BD0BF074E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2AC1BD-77B8-472D-9EA9-72BD0BF074E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2AC1BD-77B8-472D-9EA9-72BD0BF074E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2AC1BD-77B8-472D-9EA9-72BD0BF074E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45131E89-BE14-4815-AD34-0363340B5CB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45131E89-BE14-4815-AD34-0363340B5CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45131E89-BE14-4815-AD34-0363340B5CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45131E89-BE14-4815-AD34-0363340B5CB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

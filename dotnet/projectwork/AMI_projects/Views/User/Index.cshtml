@@ -1,0 +1,319 @@
+﻿@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+@{
+    ViewData["Title"] = "Users";
+    // We no longer use a C# model for the page
+}
+
+<div class="d-flex justify-content-end mb-3">
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addUserModal">
+        <i class="bi bi-plus-lg"></i> Add User
+    </button>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-striped table-sm table-bordered">
+        <thead class="bg-dark text-white">
+            <tr>
+                <th>User ID</th>
+                <th>Username</th>
+                <th>Display Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Last Login</th>
+                <th>Active</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <tr>
+                <td colspan="8" class="text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<nav id="paginationContainer" aria-label="Page navigation"></nav>
+
+<div class="modal fade" id="addUserModal" tabindex="-1" aria-labelledby="addUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addUserModalLabel">Add New User</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addUserForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="userUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="userUsername" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="userDisplayName" class="form-label">Display Name</label>
+                            <input type="text" class="form-control" id="userDisplayName" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="userEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="userEmail" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="userPhone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="userPhone">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="userPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="userPassword" placeholder="Enter new password">
+                            <small id="passwordHelp" class="form-text text-muted">Required for new users. Leave blank to keep current password when editing.</small>
+                        </div>
+                        <div class="col-md-6 mb-3 d-flex align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="userIsActive" checked>
+                                <label class="form-check-label" for="userIsActive">
+                                    User is Active
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="addUserError" class="alert alert-danger" style="display: none;"></div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="saveUserButton">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var currentEditId = null;
+            var currentPage = 1;
+
+            var apiToken = "@ViewBag.ApiToken";
+            var apiBaseUrl = "@Configuration["ApiBaseUrl"]";
+
+            // --- Helper: Get API error message ---
+            function getErrorMessage(xhr) {
+                var errorMsg = "A server error occurred.";
+                if (xhr.responseText) {
+                    try {
+                        var response = JSON.parse(xhr.responseText);
+                        errorMsg = response.message || response.title || xhr.responseText;
+                    } catch (e) { errorMsg = xhr.responseText; }
+                }
+                return errorMsg;
+            }
+
+            // --- Helper: Reset the modal ---
+            function resetModal() {
+                currentEditId = null;
+                $('#addUserForm')[0].reset();
+                $("#addUserError").hide().text("");
+                $('#addUserModalLabel').text('Add New User');
+                $('#userUsername').prop('readonly', false);
+                $('#passwordHelp').text('Required for new users.');
+                $('#userPassword').prop('placeholder', 'Enter new password');
+            }
+
+            // --- Helper: Build Pagination UI ---
+            function buildPagination(pagination) {
+                var container = $('#paginationContainer');
+                container.empty();
+                if (!pagination || pagination.totalPages <= 1) return;
+
+                var ul = $('<ul class="pagination justify-content-center"></ul>');
+
+                ul.append(`<li class="page-item ${pagination.hasPreviousPage ? '' : 'disabled'}">
+                            <a class="page-link" href="#" data-page="${pagination.pageNumber - 1}">Previous</a>
+                          </li>`);
+
+                for (let i = 1; i <= pagination.totalPages; i++) {
+                     ul.append(`<li class="page-item ${i === pagination.pageNumber ? 'active' : ''}">
+                                <a class="page-link" href="#" data-page="${i}">${i}</a>
+                               </li>`);
+                }
+
+                ul.append(`<li class="page-item ${pagination.hasNextPage ? '' : 'disabled'}">
+                            <a class="page-link" href="#" data-page="${pagination.pageNumber + 1}">Next</a>
+                          </li>`);
+
+                container.append(ul);
+            }
+
+            // --- MAIN FUNCTION: Load Users ---
+            function loadUsers(page = 1) {
+                currentPage = page;
+
+                $.ajax({
+                    url: `${apiBaseUrl}users?pageNumber=${page}`,
+                    type: "GET",
+                    headers: { "Authorization": "Bearer " + apiToken },
+                    beforeSend: function() {
+                         $('#userTableBody').html('<tr><td colspan="8" class="text-center"><div class="spinner-border text-primary" role="status"></div></td></tr>');
+                    },
+                    success: function (users, status, xhr) {
+                        var tableBody = $('#userTableBody');
+                        tableBody.empty();
+
+                        if (users.length === 0) {
+                            tableBody.html('<tr><td colspan="8" class="text-center">No users found.</td></tr>');
+                            buildPagination(null);
+                            return;
+                        }
+
+                        $.each(users, function (i, user) {
+                            var activeBadge = user.isActive
+                                ? `<span class="text-success"><i class="bi bi-check-circle-fill"></i> Yes</span>`
+                                : `<span class="text-danger"><i class="bi bi-x-circle-fill"></i> No</span>`;
+
+                            var lastLogin = user.lastLogin ? new Date(user.lastLogin).toLocaleString() : '—';
+
+                            var row = `<tr>
+                                <td>${user.userId}</td>
+                                <td>${user.username}</td>
+                                <td>${user.displayName}</td>
+                                <td>${user.email}</td>
+                                <td>${user.phone || ''}</td>
+                                <td>${lastLogin}</td>
+                                <td>${activeBadge}</td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm edit-btn" data-id="${user.userId}">Edit</button>
+                                    <button class="btn btn-danger btn-sm delete-btn" data-id="${user.userId}" data-username="${user.username}">Delete</button>
+                                </td>
+                            </tr>`;
+                            tableBody.append(row);
+                        });
+
+                        var paginationHeader = xhr.getResponseHeader('X-Pagination');
+                        if (paginationHeader) {
+                            var pagination = JSON.parse(paginationHeader);
+                            buildPagination(pagination);
+                        }
+                    },
+                    error: function (xhr) {
+                         $('#userTableBody').html(`<tr><td colspan="8" class="text-center text-danger">Error: ${getErrorMessage(xhr)}</td></tr>`);
+                         buildPagination(null);
+                    }
+                });
+            }
+
+            // --- EVENT HANDLERS (These call our C# controller actions) ---
+
+            // Pagination click
+            $(document).on('click', '.page-link', function(e) {
+                e.preventDefault();
+                var page = $(this).data('page');
+                if (page) {
+                    loadUsers(page);
+                }
+            });
+
+            // "Save" button (Add/Edit)
+            $("#saveUserButton").on("click", function () {
+                var ajaxUrl = "";
+                var ajaxType = "";
+                var userData = {};
+
+                if (currentEditId) {
+                    ajaxUrl = "@Url.Action("Update", "User")/" + currentEditId;
+                    ajaxType = "PUT";
+                    userData = {
+                        displayName: $("#userDisplayName").val(),
+                        email: $("#userEmail").val(),
+                        phone: $("#userPhone").val(),
+                        password: $("#userPassword").val() || null,
+                        isActive: $("#userIsActive").is(":checked")
+                    };
+                } else {
+                    ajaxUrl = "@Url.Action("Create", "User")";
+                    ajaxType = "POST";
+                    userData = {
+                        username: $("#userUsername").val(),
+                        displayName: $("#userDisplayName").val(),
+                        email: $("#userEmail").val(),
+                        phone: $("#userPhone").val(),
+                        password: $("#userPassword").val(),
+                        isActive: $("#userIsActive").is(":checked")
+                    };
+                }
+
+                // ... (validation remains the same) ...
+
+                $.ajax({
+                    url: ajaxUrl,
+                    type: ajaxType,
+                    contentType: "application/json",
+                    data: JSON.stringify(userData),
+                    success: function (response) {
+                        $('#addUserModal').modal('hide');
+                        loadUsers(currentPage);
+                    },
+                    error: function (xhr) {
+                        $("#addUserError").text(getErrorMessage(xhr)).show();
+                    }
+                });
+            });
+
+            // "Edit" button click
+            $(document).on('click', '.edit-btn', function () {
+                currentEditId = $(this).data('id');
+
+                $.get('/User/GetUserData?id=' + currentEditId, function (user) {
+                    $('#userUsername').val(user.username).prop('readonly', true);
+                    $('#userDisplayName').val(user.displayName);
+                    $('#userEmail').val(user.email);
+                    $('#userPhone').val(user.phone);
+                    $('#userIsActive').prop('checked', user.isActive);
+                    $('#passwordHelp').text('Leave blank to keep current password.');
+                    $('#userPassword').prop('placeholder', 'Enter new password (optional)');
+                    $('#addUserModalLabel').text('Edit User');
+                    $('#addUserModal').modal('show');
+                }).fail(function (xhr) {
+                    alert("Error: Could not fetch user data. " + getErrorMessage(xhr));
+                });
+            });
+
+            // "Delete" button click
+            $(document).on('click', '.delete-btn', function () {
+                var userId = $(this).data('id');
+                var username = $(this).data('username');
+
+                if (username === 'admin') {
+                    alert("Cannot delete the 'admin' user.");
+                    return;
+                }
+
+                if (confirm('Are you sure?')) {
+                    $.ajax({
+                        url: "@Url.Action("Delete", "User")/" + userId,
+                        type: 'DELETE',
+                        success: function () {
+                            loadUsers(currentPage);
+                        },
+                        error: function (xhr) {
+                             alert("Error: " + getErrorMessage(xhr));
+                        }
+                    });
+                }
+            });
+
+            // Modal Reset
+            $('#addUserModal').on('hidden.bs.modal', function () {
+                resetModal();
+            });
+
+            // --- Initial Load ---
+            loadUsers(1);
+        });
+    </script>
+}

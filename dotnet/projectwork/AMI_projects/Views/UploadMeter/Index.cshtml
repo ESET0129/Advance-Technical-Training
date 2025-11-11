@@ -1,0 +1,118 @@
+﻿@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+@{
+    ViewData["Title"] = "Upload Meters";
+    // We no longer need the ViewBag.UploadResult
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                Select CSV File
+            </div>
+            <div class="card-body">
+                <form id="uploadForm">
+                    <div class="mb-3">
+                        <label for="csvFile" class="form-label">Upload a .csv file with meter data:</label>
+                        <input class="form-control" type="file" id="csvFile" name="csvFile" accept=".csv" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="uploadButton">
+                        <i class="bi bi-cloud-upload"></i> Upload
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div id="uploadAlertArea">
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            var apiToken = "@ViewBag.ApiToken";
+            var apiBaseUrl = "@Configuration["ApiBaseUrl"]";
+
+            $('#uploadForm').on('submit', function (e) {
+                e.preventDefault(); // Stop the form from submitting normally
+
+                var fileInput = $('#csvFile')[0];
+                if (fileInput.files.length === 0) {
+                    showAlert('Please select a file to upload.', 'danger');
+                    return;
+                }
+
+                var file = fileInput.files[0];
+                if (file.type !== "text/csv" && !file.name.endsWith(".csv")) {
+                    showAlert('Invalid file type. Only .csv files are allowed.', 'danger');
+                    return;
+                }
+
+                // Create a FormData object to send the file
+                var formData = new FormData();
+                formData.append('file', file); // 'file' must match the API's parameter name
+
+                var uploadButton = $('#uploadButton');
+                uploadButton.prop('disabled', true).html(
+                    '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Uploading...'
+                );
+
+                clearAlerts();
+
+                $.ajax({
+                    url: `${apiBaseUrl}upload/meters`,
+                    type: "POST",
+                    data: formData,
+                    processData: false, // Don't let jQuery process the data
+                    contentType: false, // Don't let jQuery set the content type
+                    headers: {
+                        "Authorization": "Bearer " + apiToken
+                    },
+                    success: function (response) {
+                        uploadButton.prop('disabled', false).html('<i class="bi bi-cloud-upload"></i> Upload');
+
+                        var successMessage = `<strong>Upload Complete!</strong><br>
+                                              Total Rows: ${response.totalRows}<br>
+                                              Imported: ${response.successfullyImported}<br>
+                                              Failed: ${response.failedRows}`;
+
+                        showAlert(successMessage, 'success');
+
+                        if (response.errorMessages && response.errorMessages.length > 0) {
+                            var errorList = response.errorMessages.map(err => `<li><small>${err}</small></li>`).join('');
+                            showAlert(`<strong>Errors:</strong><ul>${errorList}</ul>`, 'warning');
+                        }
+                    },
+                    error: function (xhr) {
+                        uploadButton.prop('disabled', false).html('<i class="bi bi-cloud-upload"></i> Upload');
+                        var errorMsg = "An unknown error occurred.";
+                         if (xhr.responseText) {
+                            try {
+                                var r = JSON.parse(xhr.responseText);
+                                errorMsg = r.title || r.message || "File upload failed.";
+                            } catch (e) { errorMsg = "File upload failed. Check file format."; }
+                        }
+                        showAlert(`<strong>Error:</strong> ${errorMsg}`, 'danger');
+                    }
+                });
+            });
+
+            function showAlert(message, type) {
+                $('#uploadAlertArea').append(
+                    `<div classclass="alert alert-${type} alert-dismissible fade show" role="alert">
+                        ${message}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>`
+                );
+            }
+
+            function clearAlerts() {
+                $('#uploadAlertArea').empty();
+            }
+
+        });
+    </script>
+}

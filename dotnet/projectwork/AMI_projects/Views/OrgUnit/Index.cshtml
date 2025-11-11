@@ -1,0 +1,234 @@
+﻿@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+@{
+    ViewData["Title"] = "Org Unit Hierarchy";
+    // We no longer need ViewBag variables
+}
+
+<div class="p-3 bg-light border rounded">
+    <div class="row g-3">
+        <div class="col-md-3">
+            <label for="zone-select" class="form-label">Zone</label>
+            <select id="zone-select" class="form-select">
+                <option value="0" selected>-- Loading... --</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="substation-select" class="form-label">Substation</label>
+            <select id="substation-select" class="form-select" disabled>
+                <option value="0" selected>-- Select Zone First --</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="feeder-select" class="form-label">Feeder</label>
+            <select id="feeder-select" class="form-select" disabled>
+                <option value="0" selected>-- Select Substation First --</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="dtr-select" class="form-label">DTR</label>
+            <select id="dtr-select" class="form-select" disabled>
+                <option value="0" selected>-- Select Feeder First --</option>
+            </select>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row g-3">
+        <div class="col-md-6">
+            <label for="dtr-direct-select" class="form-label">Select DTR Directly</label>
+            <select id="dtr-direct-select" class="form-select">
+                <option value="0" selected>-- Loading... --</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="mt-4">
+    <h4>Selected Hierarchy:</h4>
+    <p id="selected-hierarchy-text" class="text-muted">None selected</p>
+</div>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            var apiToken = "@ViewBag.ApiToken";
+            var apiBaseUrl = "@Configuration["ApiBaseUrl"]";
+            var cascadingLock = false; // Prevents infinite loops
+
+            // --- Helper: Get API error message ---
+            function getErrorMessage(xhr) {
+                var errorMsg = "A server error occurred.";
+                if (xhr.responseText) {
+                    try {
+                        var response = JSON.parse(xhr.responseText);
+                        errorMsg = response.message || xhr.responseText;
+                    } catch (e) { errorMsg = xhr.responseText; }
+                }
+                return errorMsg;
+            }
+
+            // --- Helper: Populate a dropdown ---
+            function populateDropdown(dropdown, data, selectedId = 0, defaultText = "-- Select --") {
+                dropdown.empty();
+                dropdown.append($('<option>', { value: 0, text: defaultText }));
+
+                $.each(data, function (i, item) {
+                    dropdown.append($('<option>', {
+                        value: item.orgUnitId,
+                        text: item.name
+                    }));
+                });
+
+                if (selectedId > 0) {
+                    dropdown.val(selectedId);
+                }
+                dropdown.prop('disabled', false);
+            }
+
+            // --- Helper: Reset child dropdowns ---
+            function resetDropdown(dropdown, defaultText = "-- Select --") {
+                dropdown.empty().append($('<option>', { value: 0, text: defaultText }))
+                         .prop('disabled', true);
+            }
+
+            // --- Helper: Update the selected hierarchy text ---
+            function updateSelectedText() {
+                var dtrName = $('#dtr-select option:selected').text();
+                if ($('#dtr-select').val() > 0) {
+                    var feederName = $('#feeder-select option:selected').text();
+                    var subName = $('#substation-select option:selected').text();
+                    var zoneName = $('#zone-select option:selected').text();
+                    $('#selected-hierarchy-text').text(
+                        zoneName + " > " + subName + " > " + feederName + " > " + dtrName
+                    );
+                } else {
+                     $('#selected-hierarchy-text').text('None selected');
+                }
+            }
+
+            // --- Helper: Reusable API call function ---
+            function getApiData(endpoint, callback) {
+                $.ajax({
+                    url: `${apiBaseUrl}${endpoint}`,
+                    type: "GET",
+                    headers: { "Authorization": "Bearer " + apiToken },
+                    success: callback,
+                    error: function (xhr) {
+                        alert("Error loading data: " + getErrorMessage(xhr));
+                    }
+                });
+            }
+
+            // --- INITIAL LOAD ---
+            function loadInitialDropdowns() {
+                // 1. Load Zones
+                getApiData("orgunits/type/Zone", function(data) {
+                    populateDropdown($('#zone-select'), data, 0, "-- Select Zone --");
+                });
+
+                // 2. Load all DTRs
+                getApiData("orgunits/dtrs", function(data) {
+                    populateDropdown($('#dtr-direct-select'), data, 0, "-- Search DTR --");
+                });
+            }
+
+            // --- CASCADING DROPDOWN LOGIC ---
+            $('#zone-select').change(function () {
+                if (cascadingLock) return;
+                var zoneId = $(this).val();
+                resetDropdown($('#substation-select'), '-- Select Substation --');
+                resetDropdown($('#feeder-select'), '-- Select Feeder --');
+                resetDropdown($('#dtr-select'), '-- Select DTR --');
+                $('#dtr-direct-select').val(0);
+                updateSelectedText();
+
+                if (zoneId > 0) {
+                    getApiData(`orgunits/children/${zoneId}`, function(data) {
+                        populateDropdown($('#substation-select'), data, 0, '-- Select Substation --');
+                    });
+                }
+            });
+
+            $('#substation-select').change(function () {
+                if (cascadingLock) return;
+                var substationId = $(this).val();
+                resetDropdown($('#feeder-select'), '-- Select Feeder --');
+                resetDropdown($('#dtr-select'), '-- Select DTR --');
+                $('#dtr-direct-select').val(0);
+                updateSelectedText();
+
+                if (substationId > 0) {
+                    getApiData(`orgunits/children/${substationId}`, function(data) {
+                        populateDropdown($('#feeder-select'), data, 0, '-- Select Feeder --');
+                    });
+                }
+            });
+
+            $('#feeder-select').change(function () {
+                if (cascadingLock) return;
+                var feederId = $(this).val();
+                resetDropdown($('#dtr-select'), '-- Select DTR --');
+                $('#dtr-direct-select').val(0);
+                updateSelectedText();
+
+                if (feederId > 0) {
+                    getApiData(`orgunits/children/${feederId}`, function(data) {
+                        populateDropdown($('#dtr-select'), data, 0, '-- Select DTR --');
+                    });
+                }
+            });
+
+            $('#dtr-select').change(function() {
+                if (cascadingLock) return;
+                $('#dtr-direct-select').val($(this).val());
+                updateSelectedText();
+            });
+
+            // --- DIRECT DTR SEARCH LOGIC ---
+            $('#dtr-direct-select').change(function () {
+                var dtrId = $(this).val();
+
+                if (dtrId > 0) {
+                    cascadingLock = true;
+
+                    getApiData(`orgunits/hierarchy/${dtrId}`, function (hierarchy) {
+                        // hierarchy = [Zone, Substation, Feeder, DTR]
+
+                        if (hierarchy.length > 0) {
+                            $('#zone-select').val(hierarchy[0].orgUnitId);
+                        }
+
+                        // We chain the calls to ensure they load in order
+                        if (hierarchy.length > 1) {
+                            getApiData(`orgunits/children/${hierarchy[0].orgUnitId}`, function (data) {
+                                populateDropdown($('#substation-select'), data, hierarchy[1].orgUnitId, '-- Select Substation --');
+
+                                if (hierarchy.length > 2) {
+                                    getApiData(`orgunits/children/${hierarchy[1].orgUnitId}`, function (data) {
+                                        populateDropdown($('#feeder-select'), data, hierarchy[2].orgUnitId, '-- Select Feeder --');
+
+                                        if (hierarchy.length > 3) {
+                                             getApiData(`orgunits/children/${hierarchy[2].orgUnitId}`, function (data) {
+                                                populateDropdown($('#dtr-select'), data, hierarchy[3].orgUnitId, '-- Select DTR --');
+                                                updateSelectedText();
+                                                cascadingLock = false; // Release lock
+                                            });
+                                        } else { cascadingLock = false; }
+                                    });
+                                } else { cascadingLock = false; }
+                            });
+                        } else { cascadingLock = false; }
+                    });
+                } else {
+                    $('#zone-select').val(0).trigger('change');
+                }
+            });
+
+            // --- Load the dropdowns when the page starts ---
+            loadInitialDropdowns();
+        });
+    </script>
+}

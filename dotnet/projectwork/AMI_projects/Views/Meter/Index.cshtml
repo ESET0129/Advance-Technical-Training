@@ -1,0 +1,377 @@
+﻿@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+@{
+    ViewData["Title"] = "Meter";
+}
+
+<!-- 1. Filter Section (Now controlled by JavaScript) -->
+<form id="filterForm" class="row g-3 mb-3 p-3 bg-light border rounded">
+    <div class="col-md-3">
+        <label for="serialNoFilter" class="form-label">Enter Serial No</label>
+        <input id="serialNoFilter" type="text" class="form-control">
+    </div>
+    <div class="col-md-3">
+        <label for="statusFilter" class="form-label">Status</label>
+        <select id="statusFilter" class="form-select">
+            <option value="">-- All --</option>
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+            <option value="Decommissioned">Decommissioned</option>
+        </select>
+    </div>
+    <div class="col-md-3">
+        <label for="installDateFilter" class="form-label">Install Date</label>
+        <input id="installDateFilter" type="date" class="form-control">
+    </div>
+    <div class="col-md-3 d-flex align-items-end">
+        <button type="submit" class="btn btn-primary me-2">
+            <i class="bi bi-search"></i> Search
+        </button>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addMeterModal">
+            <i class="bi bi-plus-lg"></i>
+        </button>
+    </div>
+</form>
+
+<!-- 2. Meters Table (Shell) -->
+<div class="table-responsive">
+    <table class="table table-striped table-sm table-bordered">
+        <thead class="bg-dark text-white">
+            <tr>
+                <th>Meter Serial No</th>
+                <th>Consumer ID</th>
+                <th>IP Address</th>
+                <th>ICCID</th>
+                <th>IMSI</th>
+                <th>Manufacturer</th>
+                <th>Firmware</th>
+                <th>Category</th>
+                <th>Install Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <!-- This table body will be filled by JavaScript -->
+        <tbody id="meterTableBody">
+            <tr>
+                <td colspan="11" class="text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- 3. Pagination (Shell) -->
+<nav id="paginationContainer" aria-label="Page navigation"></nav>
+
+<!-- 4. Add/Edit Meter Modal -->
+<div class="modal fade" id="addMeterModal" tabindex="-1" aria-labelledby="addMeterModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addMeterModalLabel">Add New Meter</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addMeterForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="meterSerialNo" class="form-label">Meter Serial No</label>
+                            <input type="text" class="form-control" id="meterSerialNo" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="ipAddress" class="form-label">IP Address</label>
+                            <input type="text" class="form-control" id="ipAddress" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="iccid" class="form-label">ICCID</label>
+                            <input type="text" class="form-control" id="iccid" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="imsi" class="form-label">IMSI</label>
+                            <input type="text" class="form-control" id="imsi" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="manufacturer" class="form-label">Manufacturer</label>
+                            <input type="text" class="form-control" id="manufacturer" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="category" class="form-label">Category</label>
+                            <input type="text" class="form-control" id="category" value="Residential" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="consumerId" class="form-label">Consumer ID</label>
+                            <input type="number" class="form-control" id="consumerId" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="orgUnitId" class="form-label">Org Unit ID (DTR)</label>
+                            <input type="number" class="form-control" id="orgUnitId" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="tariffId" class="form-label">Tariff ID</label>
+                            <input type="number" class="form-control" id="tariffId" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="installDateModal" class="form-label">Install Date</label>
+                            <input type="datetime-local" class="form-control" id="installDateModal" required>
+                        </div>
+                    </div>
+
+                    <div id="addMeterError" class="alert alert-danger" style="display: none;"></div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="saveMeterButton">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            var currentEditId = null;
+            var currentPage = 1;
+
+            // Get API token from ViewBag and API URL from config
+            var apiToken = "@ViewBag.ApiToken";
+            var apiBaseUrl = "@Configuration["ApiBaseUrl"]";
+
+            // --- Helper: Get API error message ---
+            function getErrorMessage(xhr) {
+                var errorMsg = "A server error occurred.";
+                if (xhr.responseText) {
+                    try {
+                        var response = JSON.parse(xhr.responseText);
+                        errorMsg = response.message || xhr.responseText;
+                    } catch (e) { errorMsg = xhr.responseText; }
+                }
+                return errorMsg;
+            }
+
+            // --- Helper: Reset the modal ---
+            function resetModal() {
+                currentEditId = null;
+                $('#addMeterForm')[0].reset();
+                $("#addMeterError").hide().text("");
+                $('#addMeterModalLabel').text('Add New Meter');
+                $('#meterSerialNo').prop('readonly', false);
+            }
+
+            // --- Helper: Build Pagination UI ---
+            function buildPagination(pagination) {
+                var container = $('#paginationContainer');
+                container.empty();
+                if (!pagination || pagination.totalPages <= 1) return;
+
+                var ul = $('<ul class="pagination justify-content-center"></ul>');
+
+                ul.append(`<li class="page-item ${pagination.hasPreviousPage ? '' : 'disabled'}">
+                            <a class="page-link" href="#" data-page="${pagination.pageNumber - 1}">Previous</a>
+                          </li>`);
+
+                for (let i = 1; i <= pagination.totalPages; i++) {
+                     ul.append(`<li class="page-item ${i === pagination.pageNumber ? 'active' : ''}">
+                                <a class="page-link" href="#" data-page="${i}">${i}</a>
+                               </li>`);
+                }
+
+                ul.append(`<li class="page-item ${pagination.hasNextPage ? '' : 'disabled'}">
+                            <a class="page-link" href="#" data-page="${pagination.pageNumber + 1}">Next</a>
+                          </li>`);
+
+                container.append(ul);
+            }
+
+            // --- MAIN FUNCTION: Load Meters ---
+            function loadMeters(page = 1) {
+                currentPage = page;
+                var serialNo = $("#serialNoFilter").val();
+                var status = $("#statusFilter").val();
+                var installDate = $("#installDateFilter").val();
+
+                var query = `pageNumber=${page}`;
+                if (serialNo) query += `&serialNo=${serialNo}`;
+                if (status) query += `&status=${status}`;
+                if (installDate) query += `&installDate=${installDate}`;
+
+                $.ajax({
+                    url: `${apiBaseUrl}meters?${query}`,
+                    type: "GET",
+                    headers: { "Authorization": "Bearer " + apiToken },
+                    beforeSend: function() {
+                         $('#meterTableBody').html('<tr><td colspan="11" class="text-center"><div class="spinner-border text-primary" role="status"></div></td></tr>');
+                    },
+                    success: function (meters, status, xhr) {
+                        var tableBody = $('#meterTableBody');
+                        tableBody.empty();
+
+                        if (meters.length === 0) {
+                            tableBody.html('<tr><td colspan="11" class="text-center">No meters found.</td></tr>');
+                            buildPagination(null); // Clear pagination
+                            return;
+                        }
+
+                        $.each(meters, function (i, meter) {
+                            var statusBadge = (meter.status === "Active")
+                                ? `<span class="badge bg-success">${meter.status}</span>`
+                                : `<span class="badge bg-danger">${meter.status}</span>`;
+
+                            var installDate = new Date(meter.installTsUtc).toLocaleDateString();
+
+                            var row = `<tr>
+                                <td><a href="/Meter/Details/${meter.meterSerialNo}">${meter.meterSerialNo}</a></td>
+                                <td>${meter.consumerId || ''}</td>
+                                <td>${meter.ipAddress}</td>
+                                <td>${meter.iccid}</td>
+                                <td>${meter.imsi}</td>
+                                <td>${meter.manufacturer}</td>
+                                <td>${meter.firmware || ''}</td>
+                                <td>${meter.category}</td>
+                                <td>${installDate}</td>
+                                <td>${statusBadge}</td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm edit-btn" data-id="${meter.meterSerialNo}">Edit</button>
+                                    <button class="btn btn-danger btn-sm delete-btn" data-id="${meter.meterSerialNo}">Delete</button>
+                                </td>
+                            </tr>`;
+                            tableBody.append(row);
+                        });
+
+                        var paginationHeader = xhr.getResponseHeader('X-Pagination');
+                        if (paginationHeader) {
+                            var pagination = JSON.parse(paginationHeader);
+                            buildPagination(pagination);
+                        }
+                    },
+                    error: function (xhr) {
+                         $('#meterTableBody').html(`<tr><td colspan="11" class="text-center text-danger">Error: ${getErrorMessage(xhr)}</td></tr>`);
+                         buildPagination(null); // Clear pagination
+                    }
+                });
+            }
+
+            // --- EVENT HANDLERS ---
+
+            // Search form submit
+            $('#filterForm').on('submit', function(e) {
+                e.preventDefault(); // Stop form from reloading page
+                loadMeters(1); // Load page 1 with filters
+            });
+
+            // Pagination click
+            $(document).on('click', '.page-link', function(e) {
+                e.preventDefault();
+                var page = $(this).data('page');
+                if (page) {
+                    loadMeters(page);
+                }
+            });
+
+            // "Save" button (Add/Edit)
+            $("#saveMeterButton").on("click", function () {
+                var meterData = {
+                    meterSerialNo: $("#meterSerialNo").val(),
+                    ipAddress: $("#ipAddress").val(),
+                    iccid: $("#iccid").val(),
+                    imsi: $("#imsi").val(),
+                    manufacturer: $("#manufacturer").val(),
+                    category: $("#category").val(),
+                    status: "Active", // Default to Active
+                    consumerId: parseInt($("#consumerId").val()),
+                    orgUnitId: parseInt($("#orgUnitId").val()),
+                    tariffId: parseInt($("#tariffId").val()),
+                    installTsUtc: $("#installDateModal").val()
+                };
+
+                // --- Client-side validation ---
+                if (!meterData.meterSerialNo || !meterData.ipAddress || !meterData.consumerId) {
+                    $("#addMeterError").text("Serial No, IP Address, and Consumer ID are required.").show();
+                    return;
+                } else {
+                    $("#addMeterError").hide();
+                }
+
+                var ajaxUrl = (currentEditId) ? "@Url.Action("Update", "Meter")/" + currentEditId : "@Url.Action("Create", "Meter")";
+                var ajaxType = (currentEditId) ? "PUT" : "POST";
+
+                $.ajax({
+                    url: ajaxUrl,
+                    type: ajaxType,
+                    contentType: "application/json",
+                    data: JSON.stringify(meterData),
+                    success: function (response) {
+                        $('#addMeterModal').modal('hide');
+                        loadMeters(currentPage); // Reload the table
+                    },
+                    error: function (xhr) {
+                        $("#addMeterError").text(getErrorMessage(xhr)).show();
+                    }
+                });
+            });
+
+            // "Edit" button click
+            $(document).on('click', '.edit-btn', function () {
+                currentEditId = $(this).data('id');
+
+                // We call our C# controller, which calls the API
+                $.get('/Meter/GetMeterData?id=' + currentEditId, function (meter) {
+                    $('#meterSerialNo').val(meter.meterSerialNo).prop('readonly', true);
+                    $('#ipAddress').val(meter.ipAddress);
+                    $('#iccid').val(meter.iccid);
+                    $('#imsi').val(meter.imsi);
+                    $('#manufacturer').val(meter.manufacturer);
+                    $('#category').val(meter.category);
+                    $('#consumerId').val(meter.consumerId || '');
+                    $('#orgUnitId').val(meter.orgUnitId);
+                    $('#tariffId').val(meter.tariffId);
+                    var installDate = new Date(meter.installTsUtc).toISOString().slice(0, 16);
+                    $('#installDateModal').val(installDate);
+
+                    $('#addMeterModalLabel').text('Edit Meter');
+                    $('#addMeterModal').modal('show');
+                }).fail(function (xhr) {
+                    alert("Error: Could not fetch meter data. " + getErrorMessage(xhr));
+                });
+            });
+
+            // "Delete" button click
+            $(document).on('click', '.delete-btn', function () {
+                var meterId = $(this).data('id');
+                if (confirm('Are you sure you want to delete meter ' + meterId + '?')) {
+                    $.ajax({
+                        url: "@Url.Action("Delete", "Meter")/" + meterId,
+                        type: 'DELETE',
+                        success: function () {
+                            loadMeters(currentPage); // Reload the table
+                        },
+                        error: function (xhr) {
+                             alert("Error: " + getErrorMessage(xhr));
+                        }
+                    });
+                }
+            });
+
+            // Modal Reset
+            $('#addMeterModal').on('hidden.bs.modal', function () {
+                resetModal();
+            });
+
+            // --- Initial Load ---
+            loadMeters(1);
+        });
+    </script>
+}

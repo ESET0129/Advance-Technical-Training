@@ -1,0 +1,22 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "webserver",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/student": {
+      "get": {
+        "tags": [
+          "student"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

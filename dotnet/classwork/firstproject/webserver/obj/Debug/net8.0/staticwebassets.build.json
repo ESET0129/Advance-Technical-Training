@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "/rg5G5kH42t1h6biqZMPUQOrb9O7VkUGw4hL2HC/tcU=",
+  "Source": "webserver",
+  "BasePath": "_content/webserver",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

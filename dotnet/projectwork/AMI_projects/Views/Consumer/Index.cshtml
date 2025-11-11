@@ -1,0 +1,327 @@
+﻿@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+@{
+    ViewData["Title"] = "Consumer Data";
+}
+
+<form id="filterForm" class="row g-3 mb-3 p-3 bg-light border rounded">
+    <div class="col-md-3">
+        <label for="nameFilter" class="form-label">Name</label>
+        <input id="nameFilter" type="text" class="form-control" />
+    </div>
+    <div class="col-md-3">
+        <label for="phoneFilter" class="form-label">Phone</label>
+        <input id="phoneFilter" type="text" class="form-control" />
+    </div>
+    <div class="col-md-3">
+        <label for="emailFilter" class="form-label">Email</label>
+        <input id="emailFilter" type="text" class="form-control" />
+    </div>
+    <div class="col-md-3 d-flex align-items-end">
+        <button type="submit" class="btn btn-primary me-2">
+            <i class="bi bi-search"></i> Search
+        </button>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addConsumerModal">
+            <i class="bi bi-plus-lg"></i> Add
+        </button>
+    </div>
+</form>
+
+<div class="table-responsive">
+    <table class="table table-striped table-sm table-bordered">
+        <thead class="bg-dark text-white">
+            <tr>
+                <th>Consumer ID</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Created At</th>
+                <th>Created By</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="consumerTableBody">
+            <tr>
+                <td colspan="9" class="text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<nav id="paginationContainer" aria-label="Page navigation"></nav>
+
+<div class="modal fade" id="addConsumerModal" tabindex="-1" aria-labelledby="addConsumerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addConsumerModalLabel">Add New Consumer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addConsumerForm">
+                    <div class="mb-3">
+                        <label for="consumerName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="consumerName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="consumerAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="consumerAddress">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="consumerPhone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="consumerPhone">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="consumerEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="consumerEmail">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="consumerStatus" class="form-label">Status</label>
+                        <select id="consumerStatus" class="form-select">
+                            <option value="Active" selected>Active</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                    </div>
+                    <div id="addConsumerError" class="alert alert-danger" style="display: none;"></div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="saveConsumerButton">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var currentEditId = null;
+            var currentPage = 1;
+
+            // Get API token from ViewBag and API URL from config
+            var apiToken = "@ViewBag.ApiToken";
+            var apiBaseUrl = "@Configuration["ApiBaseUrl"]";
+
+            // --- Helper: Get API error message ---
+            function getErrorMessage(xhr) {
+                var errorMsg = "A server error occurred.";
+                if (xhr.responseText) {
+                    try {
+                        var response = JSON.parse(xhr.responseText);
+                        errorMsg = response.message || xhr.responseText;
+                    } catch (e) { errorMsg = xhr.responseText; }
+                }
+                return errorMsg;
+            }
+
+            // --- Helper: Reset the modal ---
+            function resetModal() {
+                currentEditId = null;
+                $('#addConsumerForm')[0].reset();
+                $("#addConsumerError").hide().text("");
+                $('#addConsumerModalLabel').text('Add New Consumer');
+            }
+
+            // --- Helper: Build Pagination UI ---
+            function buildPagination(pagination) {
+                var container = $('#paginationContainer');
+                container.empty();
+                if (!pagination || pagination.totalPages <= 1) return;
+
+                var ul = $('<ul class="pagination justify-content-center"></ul>');
+
+                ul.append(`<li class="page-item ${pagination.hasPreviousPage ? '' : 'disabled'}">
+                            <a class="page-link" href="#" data-page="${pagination.pageNumber - 1}">Previous</a>
+                          </li>`);
+
+                for (let i = 1; i <= pagination.totalPages; i++) {
+                     ul.append(`<li class="page-item ${i === pagination.pageNumber ? 'active' : ''}">
+                                <a class="page-link" href="#" data-page="${i}">${i}</a>
+                               </li>`);
+                }
+
+                ul.append(`<li class="page-item ${pagination.hasNextPage ? '' : 'disabled'}">
+                            <a class="page-link" href="#" data-page="${pagination.pageNumber + 1}">Next</a>
+                          </li>`);
+
+                container.append(ul);
+            }
+
+            // --- MAIN FUNCTION: Load Consumers ---
+            function loadConsumers(page = 1) {
+                currentPage = page;
+                var name = $("#nameFilter").val();
+                var phone = $("#phoneFilter").val();
+                var email = $("#emailFilter").val();
+
+                var query = `pageNumber=${page}`;
+                if (name) query += `&name=${name}`;
+                if (phone) query += `&phone=${phone}`;
+                if (email) query += `&email=${email}`;
+
+                $.ajax({
+                    url: `${apiBaseUrl}consumers?${query}`,
+                    type: "GET",
+                    headers: { "Authorization": "Bearer " + apiToken },
+                    beforeSend: function() {
+                         $('#consumerTableBody').html('<tr><td colspan="9" class="text-center"><div class="spinner-border text-primary" role="status"></div></td></tr>');
+                    },
+                    success: function (consumers, status, xhr) {
+                        var tableBody = $('#consumerTableBody');
+                        tableBody.empty();
+
+                        if (consumers.length === 0) {
+                            tableBody.html('<tr><td colspan="9" class="text-center">No consumers found.</td></tr>');
+                            buildPagination(null); // Clear pagination
+                            return;
+                        }
+
+                        $.each(consumers, function (i, consumer) {
+                            var statusBadge = (consumer.status === "Active")
+                                ? `<span class="badge bg-success">${consumer.status}</span>`
+                                : `<span class="badge bg-danger">${consumer.status}</span>`;
+
+                            var createdAt = new Date(consumer.createdAt).toLocaleString();
+
+                            var row = `<tr>
+                                <td>${consumer.consumerId}</td>
+                                <td>${consumer.name}</td>
+                                <td>${consumer.address || ''}</td>
+                                <td>${consumer.phone || ''}</td>
+                                <td>${consumer.email || ''}</td>
+                                <td>${statusBadge}</td>
+                                <td>${createdAt}</td>
+                                <td>${consumer.createdBy}</td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm edit-btn" data-id="${consumer.consumerId}">Edit</button>
+                                    <button class="btn btn-danger btn-sm delete-btn" data-id="${consumer.consumerId}">Delete</button>
+                                </td>
+                            </tr>`;
+                            tableBody.append(row);
+                        });
+
+                        var paginationHeader = xhr.getResponseHeader('X-Pagination');
+                        if (paginationHeader) {
+                            var pagination = JSON.parse(paginationHeader);
+                            buildPagination(pagination);
+                        }
+                    },
+                    error: function (xhr) {
+                         $('#consumerTableBody').html(`<tr><td colspan="9" class="text-center text-danger">Error: ${getErrorMessage(xhr)}</td></tr>`);
+                         buildPagination(null); // Clear pagination
+                    }
+                });
+            }
+
+            // --- EVENT HANDLERS ---
+
+            // Search form submit
+            $('#filterForm').on('submit', function(e) {
+                e.preventDefault(); // Stop form from reloading page
+                loadConsumers(1); // Load page 1 with filters
+            });
+
+            // Pagination click
+            $(document).on('click', '.page-link', function(e) {
+                e.preventDefault();
+                var page = $(this).data('page');
+                if (page) {
+                    loadConsumers(page);
+                }
+            });
+
+            // "Save" button (Add/Edit)
+            $("#saveConsumerButton").on("click", function () {
+                var consumerData = {
+                    name: $("#consumerName").val(),
+                    address: $("#consumerAddress").val(),
+                    phone: $("#consumerPhone").val(),
+                    email: $("#consumerEmail").val(),
+                    status: $("#consumerStatus").val()
+                };
+
+                if (!consumerData.name) {
+                    $("#addConsumerError").text("Name is required.").show();
+                    return;
+                } else {
+                    $("#addConsumerError").hide();
+                }
+
+                var ajaxUrl = (currentEditId) ? `${apiBaseUrl}consumers/${currentEditId}` : `${apiBaseUrl}consumers`;
+                var ajaxType = (currentEditId) ? "PUT" : "POST";
+
+                // We need to send the correct payload (with createdBy/updatedBy)
+                // This is better handled by the C# controller.
+                // We will call our C# controller, which will then call the API.
+
+                var csharpUrl = (currentEditId) ? "@Url.Action("Update", "Consumer")/" + currentEditId : "@Url.Action("Create", "Consumer")";
+
+                $.ajax({
+                    url: csharpUrl,
+                    type: ajaxType,
+                    contentType: "application/json",
+                    data: JSON.stringify(consumerData),
+                    success: function (response) {
+                        $('#addConsumerModal').modal('hide');
+                        loadConsumers(currentPage);
+                    },
+                    error: function (xhr) {
+                        $("#addConsumerError").text(getErrorMessage(xhr)).show();
+                    }
+                });
+            });
+
+            // "Edit" button click
+            $(document).on('click', '.edit-btn', function () {
+                currentEditId = $(this).data('id');
+
+                // We call our C# controller, which calls the API
+                $.get('/Consumer/GetConsumerData?id=' + currentEditId, function (consumer) {
+                    $('#consumerName').val(consumer.name);
+                    $('#consumerAddress').val(consumer.address);
+                    $('#consumerPhone').val(consumer.phone);
+                    $('#consumerEmail').val(consumer.email);
+                    $('#consumerStatus').val(consumer.status);
+
+                    $('#addConsumerModalLabel').text('Edit Consumer');
+                    $('#addConsumerModal').modal('show');
+                }).fail(function (xhr) {
+                    alert("Error: Could not fetch consumer data. " + getErrorMessage(xhr));
+                });
+            });
+
+            // "Delete" button click
+            $(document).on('click', '.delete-btn', function () {
+                var consumerId = $(this).data('id');
+                if (confirm('Are you sure?')) {
+                    $.ajax({
+                        url: "@Url.Action("Delete", "Consumer")/" + consumerId,
+                        type: 'DELETE',
+                        success: function () {
+                            loadConsumers(currentPage); // Reload the table
+                        },
+                        error: function (xhr) {
+                             alert("Error: " + getErrorMessage(xhr));
+                        }
+                    });
+                }
+            });
+
+            // Modal Reset
+            $('#addConsumerModal').on('hidden.bs.modal', function () {
+                resetModal();
+            });
+
+            // --- Initial Load ---
+            loadConsumers(1);
+        });
+    </script>
+}

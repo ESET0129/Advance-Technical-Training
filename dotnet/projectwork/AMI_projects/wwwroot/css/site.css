@@ -1,0 +1,106 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    font-size: .875rem;
+}
+
+/* ---------------------------------
+  LAYOUT STYLES
+---------------------------------
+*/
+
+.navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+    font-weight: 500;
+}
+
+.navbar .form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+}
+
+    .navbar .form-control-dark:focus {
+        border-color: transparent;
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+    }
+
+/* ---------------------------------
+  SIDEBAR STYLES
+---------------------------------
+*/
+
+.sidebar {
+    position: fixed;
+    top: 48px; /* Height of navbar */
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 250px; /* Default expanded width */
+    transition: width 0.2s ease-in-out;
+    background-color: #212529 !important;
+}
+
+/* Main content area */
+#main-content {
+    margin-left: 250px; /* Default margin for expanded sidebar */
+    padding: 1.5rem;
+    transition: margin-left 0.2s ease-in-out;
+    height: calc(100vh - 48px); /* Full height minus navbar */
+    overflow-y: auto; /* Make main content scrollable */
+}
+
+/* --- COLLAPSED STATE (toggled by JS) --- */
+
+body.sidebar-collapsed #sidebarMenu {
+    width: 60px; /* Collapsed width */
+}
+
+body.sidebar-collapsed #main-content {
+    margin-left: 60px; /* Collapsed margin */
+}
+
+body.sidebar-collapsed #sidebarMenu .nav-link {
+    font-size: 0; /* Hides text */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+    body.sidebar-collapsed #sidebarMenu .nav-link .bi {
+        font-size: 1.25rem;
+        width: 100%;
+        margin-right: 0;
+    }
+
+
+/* --- Sidebar Navigation Links --- */
+
+.nav-link {
+    font-weight: 500;
+    color: #c0c0c0; /* Light gray for links */
+}
+
+    .nav-link .bi { /* Icon styling */
+        margin-right: 8px;
+        color: #888;
+        display: inline-block;
+        width: 20px;
+        text-align: center;
+    }
+
+    .nav-link:hover {
+        color: #fff;
+    }
+
+    .nav-link.active {
+        color: #fff; /* White for active link */
+    }
+
+        .nav-link.active .bi {
+            color: #fff; /* White for active icon */
+        }
