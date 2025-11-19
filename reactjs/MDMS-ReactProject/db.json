@@ -1,11 +1,238 @@
 {
+  "energyUsageTrend": {
+    "2024": {
+      "labels": [
+        "Mangalore",
+        "Kotekar",
+        "Pumpwell",
+        "Deralakatte",
+        "Padil",
+        "Udupi",
+        "Bantwal",
+        "Surathkal"
+      ],
+      "data": [
+        120,
+        180,
+        280,
+        200,
+        380,
+        330,
+        480,
+        430
+      ]
+    },
+    "2025": {
+      "labels": [
+        "Mangalore",
+        "Kotekar",
+        "Pumpwell",
+        "Deralakatte",
+        "Padil",
+        "Udupi",
+        "Bantwal",
+        "Surathkal"
+      ],
+      "data": [
+        150,
+        200,
+        300,
+        220,
+        400,
+        350,
+        500,
+        450
+      ]
+    }
+  },
+  "userStatsByYear": {
+    "2024": {
+      "labels": [
+        "Active",
+        "De-Activated"
+      ],
+      "data": [
+        80,
+        25
+      ]
+    },
+    "2025": {
+      "labels": [
+        "Active",
+        "De-Activated"
+      ],
+      "data": [
+        90,
+        35
+      ]
+    }
+  },
+  "enterpriseSettings": {
+    "item": {
+      "dataRetentionPeriod": 30,
+      "autoLogoutTimer": 30,
+      "auditLogRetention": 30,
+      "timezone": "UTC+0",
+      "defaultLanguage": "English",
+      "currencyFormat": "INR",
+      "notifications": {
+        "email": true,
+        "sms": false,
+        "push": true
+      }
+    },
+    "notifications": {
+      "email": true,
+      "sms": true,
+      "push": true
+    }
+  },
+  "auditLogs": [
+    {
+      "id": "1001",
+      "timestamp": "2025-10-10T09:00:15Z",
+      "userId": 1,
+      "resource": "Meter",
+      "resourceId": "M-1001",
+      "action": "Update",
+      "status": "Active"
+    },
+    {
+      "id": "1002",
+      "timestamp": "2025-10-10T09:02:30Z",
+      "userId": 2,
+      "resource": "Zone",
+      "resourceId": "Z-NORTH",
+      "action": "Create",
+      "status": "Active"
+    },
+    {
+      "id": "1003",
+      "timestamp": "2025-10-10T09:05:00Z",
+      "userId": 3,
+      "resource": "User",
+      "resourceId": 12,
+      "action": "Invite",
+      "status": "Active"
+    },
+    {
+      "id": "1004",
+      "timestamp": "2025-10-10T09:10:45Z",
+      "userId": 1,
+      "resource": "Profile",
+      "resourceId": 1,
+      "action": "Update",
+      "status": "Active"
+    },
+    {
+      "id": "1005",
+      "timestamp": "2025-10-10T09:12:00Z",
+      "userId": 2,
+      "resource": "Meter",
+      "resourceId": "M-1003",
+      "action": "De-Activate",
+      "status": "De-Activated"
+    },
+    {
+      "id": "1006",
+      "timestamp": "2025-10-10T09:15:20Z",
+      "userId": 3,
+      "resource": "Settings",
+      "resourceId": "Global",
+      "action": "Update",
+      "status": "Active"
+    },
+    {
+      "id": "1007",
+      "timestamp": "2025-10-10T09:18:00Z",
+      "userId": 1,
+      "resource": "Payment",
+      "resourceId": "BILL-002",
+      "action": "Create",
+      "status": "Active"
+    },
+    {
+      "id": "1008",
+      "timestamp": "2025-10-10T09:20:00Z",
+      "userId": 2,
+      "resource": "User",
+      "resourceId": 5,
+      "action": "Update",
+      "status": "Active"
+    },
+    {
+      "id": "1009",
+      "timestamp": "2025-10-10T09:22:30Z",
+      "userId": 2,
+      "resource": "Meter",
+      "resourceId": "M-1005",
+      "action": "Activate",
+      "status": "Active"
+    },
+    {
+      "id": "1010",
+      "timestamp": "2025-10-10T09:25:00Z",
+      "userId": 3,
+      "resource": "Zone",
+      "resourceId": "Z-SOUTH",
+      "action": "Update",
+      "status": "Active"
+    },
+    {
+      "id": "1011",
+      "timestamp": "2025-10-10T09:30:00Z",
+      "userId": 1,
+      "resource": "Login",
+      "resourceId": 1,
+      "action": "Login",
+      "status": "Active"
+    },
+    {
+      "id": "1012",
+      "timestamp": "2025-10-10T09:31:00Z",
+      "userId": 2,
+      "resource": "Login",
+      "resourceId": 2,
+      "action": "Login",
+      "status": "Active"
+    },
+    {
+      "id": "1013",
+      "timestamp": "2025-10-10T09:32:00Z",
+      "userId": 3,
+      "resource": "Login",
+      "resourceId": 3,
+      "action": "Login",
+      "status": "Active"
+    },
+    {
+      "id": "1014",
+      "timestamp": "2025-10-10T09:35:00Z",
+      "userId": 2,
+      "resource": "Meter",
+      "resourceId": "M-1008",
+      "action": "De-Activate",
+      "status": "De-Activated"
+    },
+    {
+      "id": "1015",
+      "timestamp": "2025-10-10T09:40:00Z",
+      "userId": 3,
+      "resource": "User",
+      "resourceId": 15,
+      "action": "Invite",
+      "status": "Active"
+    }
+  ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "email": "user@example.com",
       "password": "password123",
       "role": "EndUser",
       "name": "John Doe",
+      "zoneId": "Z-NORTH",
+      "status": "Active",
       "mobile": "+91 9809892782",
       "notificationPreferences": {
         "email": true,
@@ -14,19 +241,138 @@
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "email": "zone@example.com",
       "password": "password123",
       "role": "ZoneLevel",
       "name": "Jane Smith",
-      "zoneId": "Z-NORTH"
+      "zoneId": "Z-NORTH",
+      "status": "Active"
     },
     {
-      "id": 3,
+      "id": "3",
       "email": "admin@example.com",
       "password": "password123",
       "role": "EnterpriseLevel",
-      "name": "Admin"
+      "name": "Admin",
+      "status": "Active"
+    },
+    {
+      "id": "4",
+      "email": "alice@example.com",
+      "password": "password123",
+      "role": "EndUser",
+      "name": "Alice Johnson",
+      "zoneId": "Z-NORTH",
+      "status": "Active"
+    },
+    {
+      "id": "5",
+      "email": "bob@example.com",
+      "password": "password123",
+      "role": "EndUser",
+      "name": "Bob Smith",
+      "zoneId": "Z-NORTH",
+      "status": "De-Activated"
+    },
+    {
+      "id": "6",
+      "email": "charlie@example.com",
+      "password": "password123",
+      "role": "EndUser",
+      "name": "Charlie Brown",
+      "zoneId": "Z-NORTH",
+      "status": "Active"
+    },
+    {
+      "id": "7",
+      "email": "david@example.com",
+      "password": "password123",
+      "role": "EndUser",
+      "name": "David Lee",
+      "zoneId": "Z-SOUTH",
+      "status": "Active"
+    },
+    {
+      "id": "8",
+      "email": "eve@example.com",
+      "password": "password123",
+      "role": "EndUser",
+      "name": "Eve Davis",
+      "zoneId": "Z-NORTH",
+      "status": "Active"
+    },
+    {
+      "id": "9",
+      "email": "frank@example.com",
+      "password": "password123",
+      "role": "EndUser",
+      "name": "Frank White",
+      "zoneId": "Z-NORTH",
+      "status": "Active"
+    },
+    {
+      "id": "10",
+      "email": "grace@example.com",
+      "password": "password123",
+      "role": "EndUser",
+      "name": "Grace Hall",
+      "zoneId": "Z-SOUTH",
+      "status": "Active"
+    },
+    {
+      "id": "11",
+      "email": "heidi@example.com",
+      "password": "password123",
+      "role": "EndUser",
+      "name": "Heidi Clark",
+      "zoneId": "Z-NORTH",
+      "status": "De-Activated"
+    },
+    {
+      "id": "12",
+      "email": "ivan@example.com",
+      "password": "password123",
+      "role": "EndUser",
+      "name": "Ivan Lopez",
+      "zoneId": "Z-NORTH",
+      "status": "Active"
+    },
+    {
+      "id": "13",
+      "email": "judy@example.com",
+      "password": "password123",
+      "role": "EndUser",
+      "name": "Judy King",
+      "zoneId": "Z-NORTH",
+      "status": "Active"
+    },
+    {
+      "id": "14",
+      "email": "mallory@example.com",
+      "password": "password123",
+      "role": "EndUser",
+      "name": "Mallory Green",
+      "zoneId": "Z-NORTH",
+      "status": "Active"
+    },
+    {
+      "id": "15",
+      "email": "oscar@example.com",
+      "password": "password123",
+      "role": "EndUser",
+      "name": "Oscar Baker",
+      "zoneId": "Z-NORTH",
+      "status": "Active"
+    },
+    {
+      "id": "a0bc",
+      "name": "shantanu swaraj",
+      "email": "ss@example.com",
+      "role": "EndUser",
+      "zoneId": "Z-NORTH",
+      "password": "password123",
+      "status": "Active"
     }
   ],
   "meters": [
@@ -34,42 +380,319 @@
       "id": "M-1001",
       "userId": 1,
       "zoneId": "Z-NORTH",
-      "status": "active",
-      "lastReading": 12050
+      "status": "Active",
+      "lastReading": 12050,
+      "lastReadingTimestamp": "2025-10-07T07:10:15Z"
     },
     {
       "id": "M-1002",
+      "userId": 3,
+      "zoneId": "Z-NORTH",
+      "status": "Active",
+      "lastReading": 8300,
+      "lastReadingTimestamp": "2025-10-07T07:15:13Z"
+    },
+    {
+      "id": "M-1003",
       "userId": 4,
       "zoneId": "Z-NORTH",
-      "status": "active",
-      "lastReading": 8300
+      "status": "De-Activated",
+      "lastReading": 1500,
+      "lastReadingTimestamp": "2025-10-07T07:18:13Z"
+    },
+    {
+      "id": "M-1004",
+      "userId": 5,
+      "zoneId": "Z-NORTH",
+      "status": "Active",
+      "lastReading": 9100,
+      "lastReadingTimestamp": "2025-10-07T07:20:00Z"
+    },
+    {
+      "id": "M-1005",
+      "userId": 1,
+      "zoneId": "Z-NORTH",
+      "status": "De-Activated",
+      "lastReading": 2200,
+      "lastReadingTimestamp": "2025-10-07T07:21:05Z"
+    },
+    {
+      "id": "M-1006",
+      "userId": 3,
+      "zoneId": "Z-NORTH",
+      "status": "Active",
+      "lastReading": 12345,
+      "lastReadingTimestamp": "2025-10-07T07:22:15Z"
+    },
+    {
+      "id": "M-1007",
+      "userId": 4,
+      "zoneId": "Z-NORTH",
+      "status": "Active",
+      "lastReading": 5678,
+      "lastReadingTimestamp": "2025-10-07T07:23:13Z"
+    },
+    {
+      "id": "M-1008",
+      "userId": 5,
+      "zoneId": "Z-NORTH",
+      "status": "De-Activated",
+      "lastReading": 910,
+      "lastReadingTimestamp": "2025-10-07T07:24:13Z"
+    },
+    {
+      "id": "M-1009",
+      "userId": 1,
+      "zoneId": "Z-NORTH",
+      "status": "Active",
+      "lastReading": 1122,
+      "lastReadingTimestamp": "2025-10-07T07:25:00Z"
+    },
+    {
+      "id": "M-1010",
+      "userId": 3,
+      "zoneId": "Z-NORTH",
+      "status": "Active",
+      "lastReading": 3344,
+      "lastReadingTimestamp": "2025-10-07T07:26:05Z"
+    },
+    {
+      "id": "M-1011",
+      "userId": 4,
+      "zoneId": "Z-NORTH",
+      "status": "Active",
+      "lastReading": 5566,
+      "lastReadingTimestamp": "2025-10-07T07:27:15Z"
+    },
+    {
+      "id": "M-1012",
+      "userId": 5,
+      "zoneId": "Z-NORTH",
+      "status": "Active",
+      "lastReading": 7788,
+      "lastReadingTimestamp": "2025-10-07T07:28:13Z"
     },
     {
       "id": "M-2001",
-      "userId": 5,
+      "userId": 6,
       "zoneId": "Z-SOUTH",
-      "status": "inactive",
-      "lastReading": 1500
+      "status": "Active",
+      "lastReading": 15000,
+      "lastReadingTimestamp": "2025-10-07T07:10:15Z"
+    },
+    {
+      "id": "M-2002",
+      "userId": 7,
+      "zoneId": "Z-SOUTH",
+      "status": "Active",
+      "lastReading": 1200,
+      "lastReadingTimestamp": "2025-10-07T07:15:13Z"
+    },
+    {
+      "id": "M-2003",
+      "userId": 6,
+      "zoneId": "Z-SOUTH",
+      "status": "De-Activated",
+      "lastReading": 300,
+      "lastReadingTimestamp": "2025-10-07T07:18:13Z"
+    },
+    {
+      "id": "M-2004",
+      "userId": 7,
+      "zoneId": "Z-SOUTH",
+      "status": "Active",
+      "lastReading": 1300,
+      "lastReadingTimestamp": "2025-10-07T07:20:00Z"
+    },
+    {
+      "id": "M-2005",
+      "userId": 6,
+      "zoneId": "Z-SOUTH",
+      "status": "De-Activated",
+      "lastReading": 450,
+      "lastReadingTimestamp": "2025-10-07T07:21:05Z"
+    },
+    {
+      "id": "M-2006",
+      "userId": 7,
+      "zoneId": "Z-SOUTH",
+      "status": "Active",
+      "lastReading": 1600,
+      "lastReadingTimestamp": "2025-10-07T07:22:15Z"
+    },
+    {
+      "id": "M-2007",
+      "userId": 6,
+      "zoneId": "Z-SOUTH",
+      "status": "Active",
+      "lastReading": 1700,
+      "lastReadingTimestamp": "2025-10-07T07:23:13Z"
+    },
+    {
+      "id": "M-2008",
+      "userId": 7,
+      "zoneId": "Z-SOUTH",
+      "status": "Active",
+      "lastReading": 1800,
+      "lastReadingTimestamp": "2025-10-07T07:24:13Z"
+    },
+    {
+      "id": "M-2009",
+      "userId": 6,
+      "zoneId": "Z-SOUTH",
+      "status": "De-Activated",
+      "lastReading": 900,
+      "lastReadingTimestamp": "2025-10-07T07:25:00Z"
+    },
+    {
+      "id": "M-2010",
+      "userId": 7,
+      "zoneId": "Z-SOUTH",
+      "status": "Active",
+      "lastReading": 1100,
+      "lastReadingTimestamp": "2025-10-07T07:26:05Z"
+    },
+    {
+      "id": "M-2011",
+      "userId": 6,
+      "zoneId": "Z-SOUTH",
+      "status": "Active",
+      "lastReading": 1300,
+      "lastReadingTimestamp": "2025-10-07T07:27:15Z"
+    },
+    {
+      "id": "M-2012",
+      "userId": 7,
+      "zoneId": "Z-SOUTH",
+      "status": "Active",
+      "lastReading": 1400,
+      "lastReadingTimestamp": "2025-10-07T07:28:13Z"
+    },
+    {
+      "id": "M-2013",
+      "userId": 6,
+      "zoneId": "Z-SOUTH",
+      "status": "Active",
+      "lastReading": 1500,
+      "lastReadingTimestamp": "2025-10-07T07:29:13Z"
     }
   ],
   "zones": [
     {
-      "id": "Z-NORTH",
-      "name": "North Zone",
-      "adminId": 2
+      "id": "123",
+      "zoneName": "Mangalore",
+      "adminId": 2,
+      "totalMeters": 5,
+      "status": "Active",
+      "location": "Mangalore City",
+      "description": "Main city zone"
     },
     {
-      "id": "Z-SOUTH",
-      "name": "South Zone",
-      "adminId": 6
+      "id": "124",
+      "zoneName": "Bajpe",
+      "adminId": 3,
+      "totalMeters": 23,
+      "status": "Active",
+      "location": "Bajpe Area",
+      "description": "Airport area"
+    },
+    {
+      "id": "125",
+      "zoneName": "Surathkal",
+      "adminId": 2,
+      "totalMeters": 34,
+      "status": "De-Activated",
+      "location": "Surathkal Town",
+      "description": "NITK campus area"
+    },
+    {
+      "id": "126",
+      "zoneName": "Pumpwell",
+      "adminId": 3,
+      "totalMeters": 12,
+      "status": "Active",
+      "location": "Pumpwell Circle",
+      "description": "City junction"
+    },
+    {
+      "id": "127",
+      "zoneName": "Kotekar",
+      "adminId": 2,
+      "totalMeters": 7,
+      "status": "Active",
+      "location": "Kotekar",
+      "description": "South suburb"
+    },
+    {
+      "id": "128",
+      "zoneName": "Bejai",
+      "adminId": 3,
+      "totalMeters": 4,
+      "status": "De-Activated",
+      "location": "Bejai",
+      "description": "Residential area"
+    },
+    {
+      "id": "129",
+      "zoneName": "Kavoor",
+      "adminId": 2,
+      "totalMeters": 9,
+      "status": "Active",
+      "location": "Kavoor",
+      "description": "North suburb"
+    },
+    {
+      "id": "130",
+      "zoneName": "Yeyyadi",
+      "adminId": 3,
+      "totalMeters": 11,
+      "status": "Active",
+      "location": "Yeyyadi",
+      "description": "Industrial area"
+    },
+    {
+      "id": "131",
+      "zoneName": "Kankanady",
+      "adminId": 2,
+      "totalMeters": 15,
+      "status": "Active",
+      "location": "Kankanady",
+      "description": "Hospital area"
+    },
+    {
+      "id": "132",
+      "zoneName": "Ullal",
+      "adminId": 3,
+      "totalMeters": 18,
+      "status": "Active",
+      "location": "Ullal Beach",
+      "description": "Coastal area"
+    },
+    {
+      "id": "133",
+      "zoneName": "Deralakatte",
+      "adminId": 2,
+      "totalMeters": 25,
+      "status": "Active",
+      "location": "Deralakatte",
+      "description": "University area"
+    },
+    {
+      "id": "0fd8",
+      "zoneName": "banglore",
+      "adminId": 2,
+      "location": "HSR",
+      "description": "resedency",
+      "status": "Active",
+      "totalMeters": 0
     }
   ],
   "bills": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 1,
       "month": "Sep 2025",
-      "amount": 1230.0,
+      "amount": 1230,
       "dueDate": "12 Oct 2025",
       "status": "Pending",
       "details": [
@@ -96,33 +719,33 @@
       "totalConsumption": "246 kWh"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 1,
       "month": "Aug 2025",
-      "amount": 1150.0,
+      "amount": 1150,
       "dueDate": "12 Sep 2025",
       "status": "Paid"
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 1,
       "month": "Jul 2025",
-      "amount": 1210.0,
+      "amount": 1210,
       "dueDate": "12 Aug 2025",
       "status": "Paid"
     },
     {
-      "id": 4,
+      "id": "4",
       "userId": 1,
       "month": "Jun 2025",
-      "amount": 1180.0,
+      "amount": 1180,
       "dueDate": "12 Jul 2025",
       "status": "Paid"
     }
   ],
   "alerts": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 1,
       "title": "Unusual High Consumption Detected",
       "description": "Your consumption was 50% higher than your weekly average.",
@@ -130,7 +753,7 @@
       "date": "2025-05-05T06:15:00Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 1,
       "title": "Payment Received",
       "description": "Your payment of ₹1150.00 for August 2025 was successful.",
@@ -138,7 +761,7 @@
       "date": "2025-05-05T04:20:00Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 1,
       "title": "New Bill Generated",
       "description": "Your new bill for September 2025 is ready.",
@@ -146,7 +769,7 @@
       "date": "2025-05-03T09:00:00Z"
     },
     {
-      "id": 4,
+      "id": "4",
       "userId": 1,
       "title": "Payment Due Reminder",
       "description": "Your bill for August 2025 is due in 3 days.",
@@ -161,14 +784,115 @@
       "pendingAlerts": 26,
       "analytics": {
         "week": {
-          "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-          "data": [300, 350, 280, 380, 370, 430, 390]
+          "labels": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "data": [
+            300,
+            350,
+            280,
+            380,
+            370,
+            430,
+            390
+          ]
         },
         "month": {
-          "labels": ["Week 1", "Week 2", "Week 3", "Week 4"],
-          "data": [2100, 2450, 1960, 2660]
+          "labels": [
+            "Week 1",
+            "Week 2",
+            "Week 3",
+            "Week 4"
+          ],
+          "data": [
+            2100,
+            2450,
+            1960,
+            2660
+          ]
         }
       }
     }
-  }
+  },
+  "enterpriseStats": {
+    "totalZones": 256,
+    "totalMeters": 55,
+    "criticalAlerts": 26,
+    "avgConsumptionPerZone": 26
+  },
+  "mapZones": [
+    {
+      "id": "mangalore",
+      "name": "Mangalore zone",
+      "position": [
+        12.9141,
+        74.856
+      ],
+      "active": 12,
+      "inactive": 6
+    },
+    {
+      "id": "bejai",
+      "name": "Bejai zone",
+      "position": [
+        12.888,
+        74.8433
+      ],
+      "active": 8,
+      "inactive": 1
+    },
+    {
+      "id": "pumpwell",
+      "name": "Pumpwell zone",
+      "position": [
+        12.871,
+        74.8601
+      ],
+      "active": 10,
+      "inactive": 2
+    },
+    {
+      "id": "surathkal",
+      "name": "Surathkal zone",
+      "position": [
+        12.9816,
+        74.8021
+      ],
+      "active": 15,
+      "inactive": 1
+    }
+  ],
+  "recentAlerts": [
+    {
+      "id": "1",
+      "title": "Alert 1",
+      "text": "a dummy or placeholder text commonly used in gr..."
+    },
+    {
+      "id": "2",
+      "title": "Alert 2",
+      "text": "a dummy or placeholder text commonly used in gr..."
+    },
+    {
+      "id": "3",
+      "title": "Alert 3",
+      "text": "a dummy or placeholder text commonly used in gr..."
+    },
+    {
+      "id": "4",
+      "title": "Alert 4",
+      "text": "a dummy or placeholder text commonly used in gr..."
+    },
+    {
+      "id": "5",
+      "title": "Alert 2 (duplicate)",
+      "text": "a dummy or placeholder text commonly used in graphic design..."
+    }
+  ]
 }

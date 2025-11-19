@@ -106,7 +106,7 @@ namespace AMI_projects.Controllers
 
             return Ok(); // 200 OK on success
         }
-    
+
 
         // --- Reusable Helper Method ---
         private async Task<T> GetApiData<T>(string apiUrl) where T : class

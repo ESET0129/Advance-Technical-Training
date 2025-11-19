@@ -3,6 +3,190 @@
   "WorkspaceRootPath": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\logs\\myapp20251118.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:logs\\myapp20251118.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\controllers\\consumerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:controllers\\consumerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\controllers\\meterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:controllers\\meterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\controllers\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:controllers\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\tariffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\tariffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\orgunitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\orgunitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\meteruploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\meteruploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\meterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\meterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\itariffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\itariffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\iorgunitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\iorgunitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\imeteruploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\imeteruploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\imeterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\imeterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\iconsumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\iconsumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\ibillingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\ibillingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\ibillingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\ibillingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\consumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\consumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\billingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\billingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\billingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\billingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\models\\amidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:models\\amidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\userviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\userviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\uploadresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\uploadresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\tariffslabcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\tariffslabcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\tariffcreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\tariffcreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\queryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\queryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\meterqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\meterqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\metercsvrecorddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\metercsvrecorddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\metercreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\metercreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\generatebillsresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\generatebillsresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\generatebillsrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\generatebillsrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\consumerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\consumerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\consumerqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\consumerqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\consumercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\consumercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\billviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\billviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\billqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\billqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,200 +207,16 @@
       "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:controllers\\orgunitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\controllers\\meterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:controllers\\meterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\controllers\\consumerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:controllers\\consumerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\controllers\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:controllers\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\consumerloginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\consumerloginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\consumerloginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\consumerloginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\consumercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\consumercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\meterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\meterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\imeterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\imeterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\consumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\consumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\iconsumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\iconsumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\consumerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\consumerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\imeteruploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\imeteruploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\billingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\billingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\ibillingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\ibillingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\ibillingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\ibillingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\billingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\billingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\generatebillsresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\generatebillsresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\generatebillsrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\generatebillsrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\billqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\billqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\billviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\billviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\orgunitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\orgunitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\iorgunitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\iorgunitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\ami_project.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:ami_project.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\ami_project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:ami_project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\meteruploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\meteruploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\uploadresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\uploadresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\metercsvrecorddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\metercsvrecorddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\userviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\userviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\tariffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\tariffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\repository\\itariffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:repository\\itariffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\metercreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\metercreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\meterqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\meterqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\tariffslabcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\tariffslabcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\tariffcreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\tariffcreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\consumerqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\consumerqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\queryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\queryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|d:\\shantanu swaraj\\advance techinical training\\dotnet\\projectwork\\ami_project\\models\\amidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F998B3D7-565B-435B-96A3-48380BF8B449}|AMI_project.csproj|solutionrelative:models\\amidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -226,7 +226,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -234,652 +234,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ConsumersController.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\ConsumersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ConsumersController.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\ConsumersController.cs*",
-              "RelativeToolTip": "Controllers\\ConsumersController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T08:02:45.094Z",
+              "DocumentIndex": 0,
+              "Title": "myapp20251118.txt",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\logs\\myapp20251118.txt",
+              "RelativeDocumentMoniker": "logs\\myapp20251118.txt",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\logs\\myapp20251118.txt",
+              "RelativeToolTip": "logs\\myapp20251118.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-18T07:34:13.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MetersController.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\MetersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MetersController.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\MetersController.cs*",
-              "RelativeToolTip": "Controllers\\MetersController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T07:45:57.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrgUnitsController.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\OrgUnitsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrgUnitsController.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\OrgUnitsController.cs*",
-              "RelativeToolTip": "Controllers\\OrgUnitsController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T09:42:33.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TariffsController.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\TariffsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TariffsController.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\TariffsController.cs*",
-              "RelativeToolTip": "Controllers\\TariffsController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T08:59:34.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TariffSlabsController.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\TariffSlabsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TariffSlabsController.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\TariffSlabsController.cs*",
-              "RelativeToolTip": "Controllers\\TariffSlabsController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T09:00:43.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UploadController.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\UploadController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UploadController.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\UploadController.cs*",
-              "RelativeToolTip": "Controllers\\UploadController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T10:06:29.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\UsersController.cs*",
-              "RelativeToolTip": "Controllers\\UsersController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T09:51:28.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T07:16:19.814Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "BillsController.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\BillsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BillsController.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\BillsController.cs*",
-              "RelativeToolTip": "Controllers\\BillsController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T03:23:31.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFIAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T06:57:32.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\AuthController.cs*",
-              "RelativeToolTip": "Controllers\\AuthController.cs*",
-              "ViewState": "AgIAADsAAAAAAAAAAAAAAEwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T07:16:19.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "AuthRepository.cs",
               "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\AuthRepository.cs",
               "RelativeDocumentMoniker": "Repository\\AuthRepository.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\AuthRepository.cs*",
-              "RelativeToolTip": "Repository\\AuthRepository.cs*",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAAIoAAAAJAAAAAAAAAA==",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\AuthRepository.cs",
+              "RelativeToolTip": "Repository\\AuthRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T07:09:44.108Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T07:09:44.108Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IAuthRepository.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IAuthRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\IAuthRepository.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IAuthRepository.cs*",
-              "RelativeToolTip": "Repository\\IAuthRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T07:09:03.615Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T06:57:32.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ConsumerLoginResponseDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerLoginResponseDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\ConsumerLoginResponseDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerLoginResponseDto.cs*",
-              "RelativeToolTip": "Dtos\\ConsumerLoginResponseDto.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T09:07:07.252Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ConsumerLoginRequestDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerLoginRequestDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\ConsumerLoginRequestDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerLoginRequestDto.cs*",
-              "RelativeToolTip": "Dtos\\ConsumerLoginRequestDto.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T09:06:47.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MeterRepository.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\MeterRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\MeterRepository.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\MeterRepository.cs",
-              "RelativeToolTip": "Repository\\MeterRepository.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAuwIQAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T07:41:33.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IMeterRepository.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IMeterRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\IMeterRepository.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IMeterRepository.cs",
-              "RelativeToolTip": "Repository\\IMeterRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T07:37:13.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ConsumerCreateDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerCreateDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\ConsumerCreateDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerCreateDto.cs",
-              "RelativeToolTip": "Dtos\\ConsumerCreateDto.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB4AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T07:59:15.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-04T07:00:13.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ConsumerRepository.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\ConsumerRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\ConsumerRepository.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\ConsumerRepository.cs",
-              "RelativeToolTip": "Repository\\ConsumerRepository.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAAGIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T08:00:51.147Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IConsumerRepository.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IConsumerRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\IConsumerRepository.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IConsumerRepository.cs",
-              "RelativeToolTip": "Repository\\IConsumerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T08:00:13.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ConsumerUpdateDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerUpdateDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\ConsumerUpdateDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerUpdateDto.cs",
-              "RelativeToolTip": "Dtos\\ConsumerUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T06:28:57.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IMeterUploadService.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IMeterUploadService.cs",
-              "RelativeDocumentMoniker": "Repository\\IMeterUploadService.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IMeterUploadService.cs",
-              "RelativeToolTip": "Repository\\IMeterUploadService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T10:03:05.54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "GenerateBillsResponseDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\GenerateBillsResponseDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\GenerateBillsResponseDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\GenerateBillsResponseDto.cs",
-              "RelativeToolTip": "Dtos\\GenerateBillsResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T03:19:34.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IBillingRepository.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IBillingRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\IBillingRepository.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IBillingRepository.cs",
-              "RelativeToolTip": "Repository\\IBillingRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T03:20:01.68Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "BillingRepository.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\BillingRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\BillingRepository.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\BillingRepository.cs",
-              "RelativeToolTip": "Repository\\BillingRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T03:20:47.406Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IBillingService.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IBillingService.cs",
-              "RelativeDocumentMoniker": "Repository\\IBillingService.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IBillingService.cs",
-              "RelativeToolTip": "Repository\\IBillingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T03:21:40.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "BillingService.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\BillingService.cs",
-              "RelativeDocumentMoniker": "Repository\\BillingService.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\BillingService.cs",
-              "RelativeToolTip": "Repository\\BillingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T03:22:32.177Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "GenerateBillsRequestDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\GenerateBillsRequestDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\GenerateBillsRequestDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\GenerateBillsRequestDto.cs",
-              "RelativeToolTip": "Dtos\\GenerateBillsRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T03:19:07.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "BillQueryParameters.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\BillQueryParameters.cs",
-              "RelativeDocumentMoniker": "Dtos\\BillQueryParameters.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\BillQueryParameters.cs",
-              "RelativeToolTip": "Dtos\\BillQueryParameters.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T03:18:25.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "BillViewDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\BillViewDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\BillViewDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\BillViewDto.cs",
-              "RelativeToolTip": "Dtos\\BillViewDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T03:17:47.431Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "LoginRequestDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\LoginRequestDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\LoginRequestDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\LoginRequestDto.cs",
-              "RelativeToolTip": "Dtos\\LoginRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T07:06:39.442Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "IOrgUnitRepository.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IOrgUnitRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\IOrgUnitRepository.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IOrgUnitRepository.cs",
-              "RelativeToolTip": "Repository\\IOrgUnitRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T09:40:12.63Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "OrgUnitRepository.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\OrgUnitRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\OrgUnitRepository.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\OrgUnitRepository.cs",
-              "RelativeToolTip": "Repository\\OrgUnitRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAmwDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T09:40:52.541Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\UserRepository.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\UserRepository.cs",
-              "RelativeToolTip": "Repository\\UserRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAqwDUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T09:50:01.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "UploadResultDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UploadResultDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\UploadResultDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UploadResultDto.cs",
-              "RelativeToolTip": "Dtos\\UploadResultDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T10:02:32.641Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "AMI_project.csproj",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\AMI_project.csproj",
-              "RelativeDocumentMoniker": "AMI_project.csproj",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\AMI_project.csproj",
-              "RelativeToolTip": "AMI_project.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-04T07:05:14.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "MeterUploadService.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\MeterUploadService.cs",
-              "RelativeDocumentMoniker": "Repository\\MeterUploadService.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\MeterUploadService.cs",
-              "RelativeToolTip": "Repository\\MeterUploadService.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAIBJwB8AAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T10:03:49.886Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "MeterCsvRecordDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\MeterCsvRecordDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\MeterCsvRecordDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\MeterCsvRecordDto.cs",
-              "RelativeToolTip": "Dtos\\MeterCsvRecordDto.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T10:01:51.255Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\IUserRepository.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IUserRepository.cs",
-              "RelativeToolTip": "Repository\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T09:48:47.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "UserUpdateDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UserUpdateDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\UserUpdateDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UserUpdateDto.cs",
-              "RelativeToolTip": "Dtos\\UserUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T09:47:38.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "UserCreateDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UserCreateDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\UserCreateDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UserCreateDto.cs",
-              "RelativeToolTip": "Dtos\\UserCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T09:46:51.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "UserViewDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UserViewDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\UserViewDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UserViewDto.cs",
-              "RelativeToolTip": "Dtos\\UserViewDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T09:46:10.108Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-04T09:13:42.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "TariffRepository.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\TariffRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\TariffRepository.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\TariffRepository.cs",
-              "RelativeToolTip": "Repository\\TariffRepository.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAIBQwGEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T08:12:01.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "ITariffRepository.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\ITariffRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\ITariffRepository.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\ITariffRepository.cs",
-              "RelativeToolTip": "Repository\\ITariffRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T08:11:04.193Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "RegisterRequestDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\RegisterRequestDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\RegisterRequestDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\RegisterRequestDto.cs",
-              "RelativeToolTip": "Dtos\\RegisterRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T07:05:52.729Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "TariffSlabCreateDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\TariffSlabCreateDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\TariffSlabCreateDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\TariffSlabCreateDto.cs",
-              "RelativeToolTip": "Dtos\\TariffSlabCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T08:10:02.503Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "MeterCreateUpdateDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\MeterCreateUpdateDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\MeterCreateUpdateDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\MeterCreateUpdateDto.cs",
-              "RelativeToolTip": "Dtos\\MeterCreateUpdateDto.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAkwAEAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T07:34:18.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "MeterQueryParameters.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\MeterQueryParameters.cs",
-              "RelativeDocumentMoniker": "Dtos\\MeterQueryParameters.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\MeterQueryParameters.cs",
-              "RelativeToolTip": "Dtos\\MeterQueryParameters.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T07:33:20.792Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "TariffCreateUpdateDto.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\TariffCreateUpdateDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\TariffCreateUpdateDto.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\TariffCreateUpdateDto.cs",
-              "RelativeToolTip": "Dtos\\TariffCreateUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T08:09:09.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "ConsumerQueryParameters.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerQueryParameters.cs",
-              "RelativeDocumentMoniker": "Dtos\\ConsumerQueryParameters.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerQueryParameters.cs",
-              "RelativeToolTip": "Dtos\\ConsumerQueryParameters.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T07:57:59.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "QueryParameters.cs",
-              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\QueryParameters.cs",
-              "RelativeDocumentMoniker": "Dtos\\QueryParameters.cs",
-              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\QueryParameters.cs",
-              "RelativeToolTip": "Dtos\\QueryParameters.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T07:31:53.043Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 6,
               "Title": "AuthResponseDto.cs",
               "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\AuthResponseDto.cs",
               "RelativeDocumentMoniker": "Dtos\\AuthResponseDto.cs",
@@ -891,7 +295,259 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 4,
+              "Title": "BillsController.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\BillsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BillsController.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\BillsController.cs",
+              "RelativeToolTip": "Controllers\\BillsController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAowFUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T03:23:31.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConsumersController.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\ConsumersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ConsumersController.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\ConsumersController.cs",
+              "RelativeToolTip": "Controllers\\ConsumersController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACIAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:02:45.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAuthRepository.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IAuthRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IAuthRepository.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IAuthRepository.cs",
+              "RelativeToolTip": "Repository\\IAuthRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:09:03.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MetersController.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\MetersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MetersController.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\MetersController.cs",
+              "RelativeToolTip": "Controllers\\MetersController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:45:57.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrgUnitRepository.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\OrgUnitRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\OrgUnitRepository.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\OrgUnitRepository.cs",
+              "RelativeToolTip": "Repository\\OrgUnitRepository.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAqwDgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:40:52.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TariffRepository.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\TariffRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\TariffRepository.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\TariffRepository.cs",
+              "RelativeToolTip": "Repository\\TariffRepository.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAowKQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:12:01.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\UserRepository.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Repository\\UserRepository.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAIBJwIAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:50:01.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-04T07:00:13.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MeterUploadService.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\MeterUploadService.cs",
+              "RelativeDocumentMoniker": "Repository\\MeterUploadService.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\MeterUploadService.cs",
+              "RelativeToolTip": "Repository\\MeterUploadService.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAqwH8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T10:03:49.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MeterRepository.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\MeterRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\MeterRepository.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\MeterRepository.cs",
+              "RelativeToolTip": "Repository\\MeterRepository.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAowIYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:41:33.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IUserRepository.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IUserRepository.cs",
+              "RelativeToolTip": "Repository\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:48:47.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ITariffRepository.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\ITariffRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ITariffRepository.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\ITariffRepository.cs",
+              "RelativeToolTip": "Repository\\ITariffRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:11:04.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IOrgUnitRepository.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IOrgUnitRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IOrgUnitRepository.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IOrgUnitRepository.cs",
+              "RelativeToolTip": "Repository\\IOrgUnitRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:40:12.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IMeterUploadService.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IMeterUploadService.cs",
+              "RelativeDocumentMoniker": "Repository\\IMeterUploadService.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IMeterUploadService.cs",
+              "RelativeToolTip": "Repository\\IMeterUploadService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T10:03:05.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IMeterRepository.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IMeterRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IMeterRepository.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IMeterRepository.cs",
+              "RelativeToolTip": "Repository\\IMeterRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:37:13.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IConsumerRepository.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IConsumerRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IConsumerRepository.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IConsumerRepository.cs",
+              "RelativeToolTip": "Repository\\IConsumerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:00:13.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IBillingService.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IBillingService.cs",
+              "RelativeDocumentMoniker": "Repository\\IBillingService.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IBillingService.cs",
+              "RelativeToolTip": "Repository\\IBillingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T03:21:40.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IBillingRepository.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IBillingRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IBillingRepository.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\IBillingRepository.cs",
+              "RelativeToolTip": "Repository\\IBillingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T03:20:01.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ConsumerRepository.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\ConsumerRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ConsumerRepository.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\ConsumerRepository.cs",
+              "RelativeToolTip": "Repository\\ConsumerRepository.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAowH0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:00:51.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BillingService.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\BillingService.cs",
+              "RelativeDocumentMoniker": "Repository\\BillingService.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\BillingService.cs",
+              "RelativeToolTip": "Repository\\BillingService.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAowHQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T03:22:32.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BillingRepository.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\BillingRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\BillingRepository.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Repository\\BillingRepository.cs",
+              "RelativeToolTip": "Repository\\BillingRepository.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAowEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T03:20:47.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "AmidbContext.cs",
               "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Models\\AmidbContext.cs",
               "RelativeDocumentMoniker": "Models\\AmidbContext.cs",
@@ -900,6 +556,329 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T06:59:12.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserViewDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UserViewDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\UserViewDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UserViewDto.cs",
+              "RelativeToolTip": "Dtos\\UserViewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:46:10.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserUpdateDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UserUpdateDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\UserUpdateDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UserUpdateDto.cs",
+              "RelativeToolTip": "Dtos\\UserUpdateDto.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowBcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:47:38.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserCreateDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UserCreateDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\UserCreateDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UserCreateDto.cs",
+              "RelativeToolTip": "Dtos\\UserCreateDto.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:46:51.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UploadResultDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UploadResultDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\UploadResultDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\UploadResultDto.cs",
+              "RelativeToolTip": "Dtos\\UploadResultDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T10:02:32.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "TariffSlabCreateDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\TariffSlabCreateDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\TariffSlabCreateDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\TariffSlabCreateDto.cs",
+              "RelativeToolTip": "Dtos\\TariffSlabCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:10:02.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "TariffCreateUpdateDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\TariffCreateUpdateDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\TariffCreateUpdateDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\TariffCreateUpdateDto.cs",
+              "RelativeToolTip": "Dtos\\TariffCreateUpdateDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:09:09.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "RegisterRequestDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\RegisterRequestDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\RegisterRequestDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\RegisterRequestDto.cs",
+              "RelativeToolTip": "Dtos\\RegisterRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:05:52.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "QueryParameters.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\QueryParameters.cs",
+              "RelativeDocumentMoniker": "Dtos\\QueryParameters.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\QueryParameters.cs",
+              "RelativeToolTip": "Dtos\\QueryParameters.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:31:53.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "MeterQueryParameters.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\MeterQueryParameters.cs",
+              "RelativeDocumentMoniker": "Dtos\\MeterQueryParameters.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\MeterQueryParameters.cs",
+              "RelativeToolTip": "Dtos\\MeterQueryParameters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:33:20.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "MeterCsvRecordDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\MeterCsvRecordDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\MeterCsvRecordDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\MeterCsvRecordDto.cs",
+              "RelativeToolTip": "Dtos\\MeterCsvRecordDto.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T10:01:51.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "MeterCreateUpdateDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\MeterCreateUpdateDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\MeterCreateUpdateDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\MeterCreateUpdateDto.cs",
+              "RelativeToolTip": "Dtos\\MeterCreateUpdateDto.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAADwvwEAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:34:18.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\LoginRequestDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\LoginRequestDto.cs",
+              "RelativeToolTip": "Dtos\\LoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:06:39.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "GenerateBillsResponseDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\GenerateBillsResponseDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\GenerateBillsResponseDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\GenerateBillsResponseDto.cs",
+              "RelativeToolTip": "Dtos\\GenerateBillsResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T03:19:34.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "GenerateBillsRequestDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\GenerateBillsRequestDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\GenerateBillsRequestDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\GenerateBillsRequestDto.cs",
+              "RelativeToolTip": "Dtos\\GenerateBillsRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T03:19:07.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ConsumerUpdateDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerUpdateDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\ConsumerUpdateDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerUpdateDto.cs",
+              "RelativeToolTip": "Dtos\\ConsumerUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T06:28:57.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ConsumerQueryParameters.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerQueryParameters.cs",
+              "RelativeDocumentMoniker": "Dtos\\ConsumerQueryParameters.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerQueryParameters.cs",
+              "RelativeToolTip": "Dtos\\ConsumerQueryParameters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:57:59.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ConsumerCreateDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerCreateDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\ConsumerCreateDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\ConsumerCreateDto.cs",
+              "RelativeToolTip": "Dtos\\ConsumerCreateDto.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:59:15.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "BillViewDto.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\BillViewDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\BillViewDto.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\BillViewDto.cs",
+              "RelativeToolTip": "Dtos\\BillViewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T03:17:47.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "BillQueryParameters.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\BillQueryParameters.cs",
+              "RelativeDocumentMoniker": "Dtos\\BillQueryParameters.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Dtos\\BillQueryParameters.cs",
+              "RelativeToolTip": "Dtos\\BillQueryParameters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T03:18:25.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAA+wE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:51:28.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "UploadController.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\UploadController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UploadController.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\UploadController.cs",
+              "RelativeToolTip": "Controllers\\UploadController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T10:06:29.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "TariffSlabsController.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\TariffSlabsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TariffSlabsController.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\TariffSlabsController.cs",
+              "RelativeToolTip": "Controllers\\TariffSlabsController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:00:43.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "TariffsController.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\TariffsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TariffsController.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\TariffsController.cs",
+              "RelativeToolTip": "Controllers\\TariffsController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAowEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:59:34.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "OrgUnitsController.cs",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\OrgUnitsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrgUnitsController.cs",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\Controllers\\OrgUnitsController.cs",
+              "RelativeToolTip": "Controllers\\OrgUnitsController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAowDoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:42:33.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "AMI_project",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\AMI_project.csproj",
+              "RelativeDocumentMoniker": "AMI_project.csproj",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\AMI_project.csproj",
+              "RelativeToolTip": "AMI_project.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-11T07:39:18.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "AMI_project.csproj",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\AMI_project.csproj",
+              "RelativeDocumentMoniker": "AMI_project.csproj",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\AMI_project.csproj",
+              "RelativeToolTip": "AMI_project.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-04T07:05:14.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "D:\\Shantanu Swaraj\\advance techinical training\\dotnet\\projectwork\\AMI_project\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-04T09:13:42.625Z"
             }
           ]
         }

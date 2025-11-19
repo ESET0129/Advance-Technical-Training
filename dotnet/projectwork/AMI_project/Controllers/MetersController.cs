@@ -97,6 +97,6 @@ namespace AMI_project.Controllers
             return NoContent(); // 204 No Content is the standard response for a successful delete
         }
 
-        
+
     }
 }

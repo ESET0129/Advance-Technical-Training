@@ -127,11 +127,13 @@ export default function MainLayout() {
           {/* --- Enterprise Only Links --- */}
         <ul>
           {user?.role === 'EnterpriseLevel' && (
-            <li>
-              <NavLink to="/zones" style={activeStyle}>
-                Zone Management
-              </NavLink>
-            </li>
+            <>
+              <li><NavLink to="/zone-management" style={activeStyle}>Zone management</NavLink></li>
+              <li><NavLink to="/meter-management" style={activeStyle}>Meter management</NavLink></li>
+              <li><NavLink to="/user-role-management" style={activeStyle}>User & Role management</NavLink></li>
+              <li><NavLink to="/audit-logs" style={activeStyle}>Audit logs</NavLink></li>
+              <li><NavLink to="/setting-configuration" style={activeStyle}>Setting & Configuration</NavLink></li>
+            </>
           )}
         </ul> 
 

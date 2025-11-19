@@ -15,6 +15,6 @@ namespace AMI_project.Repository
         Task<bool> DeleteMeterAsync(string meterSerialNo);
         Task<bool> MeterExistsAsync(string meterSerialNo);
         //Task<MeterDetailsDto> GetMeterDetailsAsync(string meterSerialNo);
-        
+
     }
 }

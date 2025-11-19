@@ -6,7 +6,7 @@ using System.Security.Claims;
 
 namespace AMI_projects.Controllers
 {
-    [Authorize]   
+    [Authorize]
     public class BillingController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;

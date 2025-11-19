@@ -7,6 +7,13 @@ import StatCard from '../component/StatCard';
 import '../styles/Dashboard.css';
 import apiClient from '../services/apiClient';
 
+import toast from 'react-hot-toast';
+
+import { FaChartBar, FaBroadcastTower } from 'react-icons/fa'; 
+import '../styles/Enterprise.css'; 
+import MapComponent from '../component/MapComponent';
+import AlertsFeed from '../component/AlertsFeed';
+
 import { 
   FaBolt, 
   FaFileInvoiceDollar, 
@@ -166,8 +173,9 @@ const ZoneDashboard = () => {
       if (!user?.zoneId) return;
       try {
         setLoading(true);
-        const response = await apiClient.get(`/zoneStats/${user.zoneId}`);
-        setStats(response.data);
+        //const response = await apiClient.get(`/zoneStats/${user.zoneId}`);
+        const response = await apiClient.get(`/zoneStats`);
+        setStats(response.data[user.zoneId]);
       } catch (error) {
         console.error("Failed to fetch zone stats:", error);
       } finally {
@@ -235,14 +243,75 @@ const ZoneDashboard = () => {
       </div>
       
       <div className="actions-row" style={{ marginTop: '2rem' }}>
-        <button className="action-btn"><FaPlusCircle /> Add meter</button>
-        <button className="action-btn"><FaFileExport /> Generate Report</button>
+        <button 
+        className="action-btn" 
+        onClick={() => toast('"Add Meter" form would open here!')}
+      >
+        <FaPlusCircle /> Add meter
+      </button>
+        <button 
+        className="action-btn" 
+        onClick={() => toast.success('Generating report...')}
+      >
+        <FaFileExport /> Generate Report
+      </button>
       </div>
     </>
   );
 };
 
-const EnterpriseDashboard = () => <h1>Enterprise-Level Dashboard</h1>;
+const EnterpriseDashboard = () => {
+  const [stats, setStats] = useState(null);
+  const [zones, setZones] = useState([]);
+  const [alerts, setAlerts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        // Fetch all data in parallel
+        const [statsRes, zonesRes, alertsRes] = await Promise.all([
+          apiClient.get('/enterpriseStats'),
+          apiClient.get('/mapZones'),
+          apiClient.get('/recentAlerts')
+        ]);
+        
+        setStats(statsRes.data);
+        setZones(zonesRes.data);
+        setAlerts(alertsRes.data);
+
+      } catch (error) {
+        console.error("Failed to fetch enterprise data:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
+  }, []);
+
+  if (loading || !stats) {
+    return <p>Loading Enterprise Dashboard...</p>;
+  }
+
+  return (
+    <>
+      <h1 className="page-title" style={{marginBottom: '1.5rem'}}>Enterprise Dashboard</h1>
+      
+      <div className="stats-grid">
+        <StatCard title="Total zones" value={stats.totalZones} icon={FaChartBar} />
+        <StatCard title="Total meters" value={stats.totalMeters} icon={FaWaveSquare} />
+        <StatCard title="Critical Alerts" value={stats.criticalAlerts} icon={FaExclamationCircle} />
+        <StatCard title="Average Consumption per Zone" value={`${stats.avgConsumptionPerZone}%`} icon={FaBroadcastTower} />
+      </div>
+
+      <div className="dashboard-grid">
+        <MapComponent zones={zones} />
+        <AlertsFeed alerts={alerts} />
+      </div>
+    </>
+  );
+};
 
 // --- Main Page Component ---
 export default function DashboardPage() {

@@ -67,37 +67,6 @@
         }
       }
     },
-    "/api/Auth/consumer-login": {
-      "post": {
-        "tags": [
-          "Auth"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ConsumerLoginRequestDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ConsumerLoginRequestDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ConsumerLoginRequestDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Bills": {
       "get": {
         "tags": [
@@ -1074,24 +1043,6 @@
           "createdBy": {
             "maxLength": 50,
             "minLength": 0,
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ConsumerLoginRequestDto": {
-        "required": [
-          "consumerId",
-          "consumerName"
-        ],
-        "type": "object",
-        "properties": {
-          "consumerId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "consumerName": {
-            "minLength": 1,
             "type": "string"
           }
         },

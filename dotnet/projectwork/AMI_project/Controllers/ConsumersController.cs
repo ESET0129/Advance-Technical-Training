@@ -18,11 +18,24 @@ namespace AMI_project.Controllers
         {
             _consumerRepository = consumerRepository;
         }
+        private readonly ILogger _logger;
+
+        public ConsumersController(ILogger logger)
+        {
+            _logger = logger;
+        }
+
+
+
 
         // GET: api/consumers
         [HttpGet]
         public async Task<IActionResult> GetConsumers([FromQuery] ConsumerQueryParameters queryParams)
         {
+            _logger.LogInformation("Executing ConsumersController.Get Method");
+
+
+
             var (consumers, totalCount) = await _consumerRepository.GetConsumersAsync(queryParams);
 
             var paginationMetadata = new

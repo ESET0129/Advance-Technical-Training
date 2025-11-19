@@ -152,3 +152,12 @@ D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project\ob
 D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project\obj\Debug\net8.0\AMI_project.pdb
 D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project\obj\Debug\net8.0\AMI_project.genruntimeconfig.cache
 D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project\obj\Debug\net8.0\ref\AMI_project.dll
+D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project\bin\Debug\net8.0\Serilog.dll
+D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project\bin\Debug\net8.0\Serilog.AspNetCore.dll
+D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project\bin\Debug\net8.0\Serilog.Sinks.File.dll

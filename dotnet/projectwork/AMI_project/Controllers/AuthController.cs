@@ -61,22 +61,22 @@ namespace AMI_project.Controllers
             return Ok(authResponse);
         }
 
-        [HttpPost("consumer-login")]
-        public async Task<IActionResult> ConsumerLogin([FromBody] ConsumerLoginRequestDto request)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+        //[HttpPost("consumer-login")]
+        //public async Task<IActionResult> ConsumerLogin([FromBody] ConsumerLoginRequestDto request)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
 
-            var authResponse = await _authRepository.ConsumerLoginAsync(request);
+        //    var authResponse = await _authRepository.ConsumerLoginAsync(request);
 
-            if (authResponse == null)
-            {
-                return Unauthorized(new { message = "Invalid Consumer ID or Name, or account is inactive." });
-            }
+        //    if (authResponse == null)
+        //    {
+        //        return Unauthorized(new { message = "Invalid Consumer ID or Name, or account is inactive." });
+        //    }
 
-            return Ok(authResponse);
-        }
+        //    return Ok(authResponse);
+        //}
     }
 }

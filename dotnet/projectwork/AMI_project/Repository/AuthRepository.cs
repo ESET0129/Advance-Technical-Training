@@ -84,33 +84,33 @@ namespace AMI_project.Repository
         }
 
         // --- ADD THIS NEW CONSUMER LOGIN METHOD ---
-        public async Task<AuthResponseDto> ConsumerLoginAsync(ConsumerLoginRequestDto request)
-        {
-            // 1. Find the consumer by ID and EXACT name match
-            var consumer = await _context.Consumers
-                .FirstOrDefaultAsync(c => c.ConsumerId == request.ConsumerId && c.Name == request.ConsumerName);
+        //public async Task<AuthResponseDto> ConsumerLoginAsync(ConsumerLoginRequestDto request)
+        //{
+        //    // 1. Find the consumer by ID and EXACT name match
+        //    var consumer = await _context.Consumers
+        //        .FirstOrDefaultAsync(c => c.ConsumerId == request.ConsumerId && c.Name == request.ConsumerName);
 
-            if (consumer == null)
-            {
-                return null; // Invalid credentials
-            }
+        //    if (consumer == null)
+        //    {
+        //        return null; // Invalid credentials
+        //    }
 
-            // 2. Check if consumer account is active
-            if (consumer.Status != "Active")
-            {
-                return null; // Account is inactive
-            }
+        //    // 2. Check if consumer account is active
+        //    if (consumer.Status != "Active")
+        //    {
+        //        return null; // Account is inactive
+        //    }
 
-            // 3. User is valid, generate a consumer-specific token
-            var token = GenerateConsumerJwtToken(consumer);
+        //    // 3. User is valid, generate a consumer-specific token
+        //    var token = GenerateConsumerJwtToken(consumer);
 
-            return new AuthResponseDto
-            {
-                Username = consumer.Name,
-                Email = consumer.Email,
-                Token = token
-            };
-        }
+        //    return new AuthResponseDto
+        //    {
+        //        Username = consumer.Name,
+        //        Email = consumer.Email,
+        //        Token = token
+        //    };
+        //}
 
         // --- ADD THIS NEW CONSUMER TOKEN GENERATOR ---
         private string GenerateConsumerJwtToken(Consumer consumer)

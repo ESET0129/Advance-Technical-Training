@@ -1,0 +1,52 @@
+2025-11-18 13:00:45.237 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-18 13:00:45.623 +05:30 [INF] Now listening on: https://localhost:7135
+2025-11-18 13:00:45.624 +05:30 [INF] Now listening on: http://localhost:5057
+2025-11-18 13:00:45.737 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-18 13:00:45.738 +05:30 [INF] Hosting environment: Development
+2025-11-18 13:00:45.738 +05:30 [INF] Content root path: D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project
+2025-11-18 13:00:46.090 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/index.html - null null
+2025-11-18 13:00:46.451 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/index.html - 200 null text/html;charset=utf-8 365.5614ms
+2025-11-18 13:00:46.610 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7135/_vs/browserLink - null null
+2025-11-18 13:00:46.610 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-18 13:00:46.626 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 16.3661ms
+2025-11-18 13:00:46.744 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7135/_vs/browserLink - 200 null text/javascript; charset=UTF-8 134.2667ms
+2025-11-18 13:00:46.867 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - null null
+2025-11-18 13:00:46.918 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 50.6523ms
+2025-11-18 13:03:11.343 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7135/api/Consumers - null null
+2025-11-18 13:03:11.380 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-11-18 13:03:11.383 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-18 13:03:11.383 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7135/api/Consumers - 401 0 null 40.5858ms
+2025-11-18 13:03:53.565 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-18 13:03:54.366 +05:30 [INF] Now listening on: https://localhost:7135
+2025-11-18 13:03:54.367 +05:30 [INF] Now listening on: http://localhost:5057
+2025-11-18 13:03:54.516 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-18 13:03:54.517 +05:30 [INF] Hosting environment: Development
+2025-11-18 13:03:54.517 +05:30 [INF] Content root path: D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project
+2025-11-18 13:03:56.666 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/index.html - null null
+2025-11-18 13:03:57.377 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/index.html - 200 null text/html;charset=utf-8 735.8448ms
+2025-11-18 13:03:57.566 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-18 13:03:57.597 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7135/_vs/browserLink - null null
+2025-11-18 13:03:57.618 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 51.3728ms
+2025-11-18 13:03:57.771 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7135/_vs/browserLink - 200 null text/javascript; charset=UTF-8 173.9846ms
+2025-11-18 13:03:57.854 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - null null
+2025-11-18 13:03:57.936 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 83.8644ms
+2025-11-18 13:04:05.425 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7135/api/Consumers - null null
+2025-11-18 13:04:05.644 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-11-18 13:04:05.651 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-18 13:04:05.651 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7135/api/Consumers - 401 0 null 227.6754ms
+2025-11-18 14:30:16.995 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-18 14:30:17.139 +05:30 [INF] Now listening on: https://localhost:7135
+2025-11-18 14:30:17.139 +05:30 [INF] Now listening on: http://localhost:5057
+2025-11-18 14:30:17.172 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-18 14:30:17.172 +05:30 [INF] Hosting environment: Development
+2025-11-18 14:30:17.172 +05:30 [INF] Content root path: D:\Shantanu Swaraj\advance techinical training\dotnet\projectwork\AMI_project
+2025-11-18 14:30:18.143 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/index.html - null null
+2025-11-18 14:30:18.434 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/index.html - 200 null text/html;charset=utf-8 292.5131ms
+2025-11-18 14:30:18.448 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-18 14:30:18.448 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7135/_vs/browserLink - null null
+2025-11-18 14:30:18.452 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.9193ms
+2025-11-18 14:30:18.496 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7135/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.5765ms
+2025-11-18 14:30:18.536 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - null null
+2025-11-18 14:30:18.567 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.0376ms

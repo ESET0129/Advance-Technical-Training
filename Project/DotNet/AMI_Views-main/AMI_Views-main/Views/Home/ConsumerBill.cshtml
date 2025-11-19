@@ -1,0 +1,242 @@
+﻿@{
+    ViewData["Title"] = "Consumer Bills";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-3">Consumer Bills</h2>
+
+    <!-- Search Filters -->
+    <div class="card p-3 mb-4">
+        <div class="row">
+            <div class="col-md-3">
+                <input type="text" id="consumerId" class="form-control" placeholder="Enter Consumer ID" />
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="meterSerialNo" class="form-control" placeholder="Enter Meter Serial No" />
+            </div>
+            <div class="col-md-3">
+                <input type="month" id="billingMonth" class="form-control" />
+            </div>
+            <div class="col-md-3">
+                <button id="searchBtn" class="btn btn-primary w-100">
+                    <i class="bi bi-search"></i> Search
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="mb-3 d-flex justify-content-between">
+        <button id="generateAllBtn" class="btn btn-success">
+            <i class="bi bi-lightning"></i> Generate All Bills
+        </button>
+    </div>
+
+    <!-- Results Table -->
+    <table class="table table-bordered table-striped" id="billsTable">
+        <thead class="table-dark">
+            <tr>
+                <th>Bill ID</th>
+                <th>Meter Serial No</th>
+                <th>Billing Month</th>
+                <th>Total kWh</th>
+                <th>Tariff</th>
+                <th>Tax</th>
+                <th>Total Amount</th>
+                <th>Status</th>
+                <th>Due Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Pagination -->
+    <nav>
+        <ul id="pagination" class="pagination justify-content-center"></ul>
+    </nav>
+</div>
+
+@section Scripts {
+    <script>
+        const baseUrl = "https://localhost:7071/api/Billing";
+        const pageSize = 7; // 🔹 show 7 rows per page
+        let currentPage = 1;
+        let allBillsData = [];
+
+        // 🔹 Load all bills automatically when the page opens
+        document.addEventListener("DOMContentLoaded", async () => {
+            await fetchAllBills();
+        });
+
+        // 🔹 Search by Consumer ID or Meter Serial
+        document.getElementById("searchBtn").addEventListener("click", async () => {
+            const consumerId = document.getElementById("consumerId").value.trim();
+            const meterSerialNo = document.getElementById("meterSerialNo").value.trim();
+            const month = document.getElementById("billingMonth").value.trim();
+
+            let url = "";
+            if (consumerId) url = `${baseUrl}/consumer/${consumerId}`;
+            else if (meterSerialNo) url = `${baseUrl}/meter/${meterSerialNo}`;
+            else {
+                alert("Please enter either Consumer ID or Meter Serial No");
+                return;
+            }
+
+            const response = await fetch(url, {
+                headers: {
+                    "Authorization": localStorage.getItem("token") ? `Bearer ${localStorage.getItem("token")}` : ""
+                }
+            });
+
+            if (!response.ok) {
+                alert("No data found or server error.");
+                return;
+            }
+
+            const bills = await response.json();
+            allBillsData = bills;
+            currentPage = 1;
+            renderPaginatedTable(bills, month);
+        });
+
+        // 🔹 Generate all bills
+        document.getElementById("generateAllBtn").addEventListener("click", async () => {
+            if (!confirm("Are you sure you want to generate all bills?")) return;
+            const response = await fetch(`${baseUrl}/generate-all`, { method: "POST" });
+            if (response.ok) {
+                alert("All bills generated successfully!");
+                await fetchAllBills();
+            } else {
+                alert("Error generating bills.");
+            }
+        });
+
+        // 🔹 Generate bill for a single meter
+        async function generateSingleBill(meterSerialNo) {
+            if (!confirm(`Generate bill for meter ${meterSerialNo}?`)) return;
+            const response = await fetch(`${baseUrl}/generate/${meterSerialNo}`, { method: "POST" });
+            if (response.ok) {
+                alert("Bill generated successfully!");
+                await fetchAllBills();
+            } else {
+                alert("Error generating bill.");
+            }
+        }
+
+        // 🔹 Fetch all bills (loop through consumer IDs)
+        async function fetchAllBills() {
+            try {
+                const consumers = [1001, 1002, 1003, 1004, 1005]; // adjust list as needed
+                let allBills = [];
+
+                for (const id of consumers) {
+                    const res = await fetch(`${baseUrl}/consumer/${id}`, {
+                        headers: {
+                            "Authorization": localStorage.getItem("token") ? `Bearer ${localStorage.getItem("token")}` : ""
+                        }
+                    });
+
+                    if (res.ok) {
+                        const bills = await res.json();
+                        allBills = allBills.concat(bills);
+                    }
+                }
+
+                allBillsData = allBills;
+                currentPage = 1;
+                renderPaginatedTable(allBills);
+            } catch (err) {
+                console.error("Error fetching all bills:", err);
+                alert("Error fetching all bills.");
+            }
+        }
+
+        // 🔹 Render paginated table
+        function renderPaginatedTable(bills, filterMonth) {
+            const filtered = bills.filter(b => !filterMonth || b.billingMonth.startsWith(filterMonth));
+            const totalPages = Math.ceil(filtered.length / pageSize);
+            const startIndex = (currentPage - 1) * pageSize;
+            const pageData = filtered.slice(startIndex, startIndex + pageSize);
+
+            renderTable(pageData);
+            renderPagination(totalPages);
+        }
+
+        // 🔹 Render table content
+        function renderTable(bills) {
+            const tbody = document.querySelector("#billsTable tbody");
+            tbody.innerHTML = "";
+
+            if (!bills || bills.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="10" class="text-center text-muted">No bills found</td></tr>`;
+                return;
+            }
+
+            bills.forEach(bill => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${bill.billId}</td>
+                    <td>${bill.meterSerialNo}</td>
+                    <td>${bill.billingMonth.split("T")[0]}</td>
+                    <td>${bill.totalKwh ?? '-'}</td>
+                    <td>${bill.baseRateApplied?.toFixed(2) ?? '-'}</td>
+                    <td>${bill.slabCharge?.toFixed(2) ?? '-'}</td>
+                    <td><strong>${bill.totalBillAmount?.toFixed(2) ?? '-'}</strong></td>
+                    <td>${bill.status}</td>
+                    <td>${bill.dueDate?.split("T")[0]}</td>
+                    <td>
+                        <button class="btn btn-sm btn-warning" onclick="generateSingleBill('${bill.meterSerialNo}')">
+                            <i class="bi bi-lightning"></i> Generate Bill
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // 🔹 Render pagination controls
+        function renderPagination(totalPages) {
+            const pagination = document.getElementById("pagination");
+            pagination.innerHTML = "";
+
+            if (totalPages <= 1) return;
+
+            // Prev Button
+            const prevLi = document.createElement("li");
+            prevLi.className = `page-item ${currentPage === 1 ? "disabled" : ""}`;
+            prevLi.innerHTML = `<a class="page-link" href="#">Previous</a>`;
+            prevLi.addEventListener("click", () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderPaginatedTable(allBillsData);
+                }
+            });
+            pagination.appendChild(prevLi);
+
+            // Page Numbers
+            for (let i = 1; i <= totalPages; i++) {
+                const li = document.createElement("li");
+                li.className = `page-item ${i === currentPage ? "active" : ""}`;
+                li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+                li.addEventListener("click", () => {
+                    currentPage = i;
+                    renderPaginatedTable(allBillsData);
+                });
+                pagination.appendChild(li);
+            }
+
+            // Next Button
+            const nextLi = document.createElement("li");
+            nextLi.className = `page-item ${currentPage === totalPages ? "disabled" : ""}`;
+            nextLi.innerHTML = `<a class="page-link" href="#">Next</a>`;
+            nextLi.addEventListener("click", () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderPaginatedTable(allBillsData);
+                }
+            });
+            pagination.appendChild(nextLi);
+        }
+    </script>
+}

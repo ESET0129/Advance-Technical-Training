@@ -1,22 +1,6 @@
 [
   {
     "ContainingType": "AMI_project.Controllers.AuthController",
-    "Method": "ConsumerLogin",
-    "RelativePath": "api/Auth/consumer-login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "AMI_project.Dtos.ConsumerLoginRequestDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AMI_project.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
     "HttpMethod": "POST",

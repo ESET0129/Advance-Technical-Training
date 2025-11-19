@@ -24,10 +24,15 @@ import AccessDeniedPage from './pages/utility/AccessDeniedPage';
 import MaintenancePage from './pages/utility/MaintenancePage';
 
 // Zone Placeholder Pages
-import MeterManagementPage from './pages/MeterManagementPage';
-import UserManagementPage from './pages/UserManagementPage';
-import ReportsPage from './pages/ReportsPage';
-import SettingsPage from './pages/SettingsPage';
+import MeterManagementPage from './Pages/MeterManagementPage';
+import UserManagementPage from './Pages/UserManagementPage';
+import ReportsPage from './Pages/ReportsPage';
+import SettingsPage from './Pages/SettingsPage';
+
+import ZoneManagementPage from './Pages/ZoneManagementPage';
+import UserRoleManagementPage from './Pages/UserRoleManagementPage';
+import AuditLogsPage from './Pages/AuditLogsPage';
+import EnterpriseSettingsPage from './Pages/EnterpriseSettingsPage';
 
 
 // Simulate a maintenance mode flag
@@ -71,7 +76,12 @@ function App() {
             <Route path="/user-management" element={<UserManagementPage />} />
             <Route path="/reports" element={<ReportsPage />} />
             <Route path="/settings" element={<SettingsPage />} />
-
+            {/* Enterprise User */}
+            
+            <Route path="/zone-management" element={<ZoneManagementPage />} />
+            <Route path="/user-role-management" element={<UserRoleManagementPage />} />
+            <Route path="/audit-logs" element={<AuditLogsPage />} />
+            <Route path="/setting-configuration" element={<EnterpriseSettingsPage />} />
             {/* Utility */}
             <Route path="/access-denied" element={<AccessDeniedPage />} />
           </Route>

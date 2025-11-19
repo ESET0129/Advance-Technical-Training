@@ -8,14 +8,31 @@ using System.Text;
 using Microsoft.OpenApi.Models;
 using AMI_project.Repository;
 using System.Security.Claims;
+using Serilog;
 
 namespace AMI_project
 {
     public class Program
     {
+       
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            Log.Logger = new LoggerConfiguration()
+           .MinimumLevel.Information()
+           //.WriteTo.Console()
+           .WriteTo.File("logs/myapp.txt", rollingInterval: RollingInterval.Day)// this i sthe ointevrla for  creating log file can be selected as for  minute, hrs, day, week...
+
+           .CreateLogger();
+
+            builder.Host.UseSerilog();
+
+            //testing loggeer using default logger 
+            builder.Logging.ClearProviders();
+            builder.Logging.AddConsole();
+
+
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
             builder.Services.AddDbContext<AmidbContext>(options =>
     options.UseSqlServer(connectionString).UseLazyLoadingProxies(false));
@@ -29,7 +46,7 @@ namespace AMI_project
             builder.Services.AddScoped<IOrgUnitRepository, OrgUnitRepository>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IMeterUploadService, MeterUploadService>();
-            
+
             builder.Services.AddScoped<IBillingRepository, BillingRepository>();
             builder.Services.AddScoped<IBillingService, BillingService>();
 

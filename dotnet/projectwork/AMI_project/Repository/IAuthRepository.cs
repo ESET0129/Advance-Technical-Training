@@ -7,6 +7,6 @@ namespace AMI_project.Repository
     {
         Task<User> RegisterAsync(RegisterRequestDto request);
         Task<AuthResponseDto> LoginAsync(LoginRequestDto request);
-        Task<AuthResponseDto> ConsumerLoginAsync(ConsumerLoginRequestDto request);
+        //Task<AuthResponseDto> ConsumerLoginAsync(ConsumerLoginRequestDto request);
     }
 }

@@ -1,0 +1,372 @@
+﻿@{
+    ViewData["Title"] = "Org Unit Hierarchy";
+}
+
+<!-- Bootstrap 5 & Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-primary"><i class="bi bi-diagram-3"></i> Org Unit Hierarchy</h2>
+        <button id="addOrgUnitBtn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#orgUnitModal">
+            <i class="bi bi-plus-circle"></i> Add Org Unit
+        </button>
+    </div>
+
+    <!-- Filters -->
+    <form id="orgUnitForm" class="row g-3 mb-4 align-items-center">
+        <div class="col-md-3">
+            <label class="form-label fw-semibold">Zone</label>
+            <select id="zoneSelect" class="form-select">
+                <option value="">-- Select Zone --</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label fw-semibold">Substation</label>
+            <select id="substationSelect" class="form-select" disabled>
+                <option value="">-- Select Substation --</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label fw-semibold">Feeder</label>
+            <select id="feederSelect" class="form-select" disabled>
+                <option value="">-- Select Feeder --</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label fw-semibold">DTR</label>
+            <select id="dtrSelect" class="form-select" disabled>
+                <option value="">-- Select DTR --</option>
+            </select>
+        </div>
+    </form>
+
+    <!-- 🔍 DTR Search -->
+    <div class="mb-4">
+        <label class="form-label fw-semibold text-primary"><i class="bi bi-search"></i> Search by DTR</label>
+        <select id="dtrSearch" class="form-select">
+            <option value="">-- Search / Select DTR --</option>
+        </select>
+    </div>
+
+    <div class="mt-4">
+        <h5 class="fw-bold"><i class="bi bi-link-45deg text-primary"></i> Selected Hierarchy:</h5>
+        <p id="selectedHierarchy" class="text-muted fst-italic">None selected</p>
+    </div>
+</div>
+
+<!-- Add Org Unit Modal -->
+<div class="modal fade" id="orgUnitModal" tabindex="-1" aria-labelledby="orgUnitModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="orgUnitModalLabel">Add / Edit Org Unit</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addOrgForm">
+                    <div class="mb-3">
+                        <label class="form-label">Type</label>
+                        <select id="type" class="form-select" required>
+                            <option value="">-- Select Type --</option>
+                            <option value="Zone">Zone</option>
+                            <option value="Substation">Substation</option>
+                            <option value="Feeder">Feeder</option>
+                            <option value="DTR">DTR</option>
+                        </select>
+                    </div>
+
+                    <!-- Dynamic parent dropdowns will appear here -->
+                    <div id="parentSelectors" class="mb-3"></div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter Org Unit Name" required />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 mt-2">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const apiBaseUrl = "https://localhost:7071/api/orgunits";
+    let allUnits = [];
+
+    $(document).ready(function () {
+        loadOrgUnits();
+
+        // Load all org units initially
+        function loadOrgUnits() {
+            $.ajax({
+                url: apiBaseUrl,
+                method: "GET",
+                success: function (data) {
+                    allUnits = data;
+                    populateZones();
+                    populateDTRSearch();
+                },
+                error: function (xhr) {
+                    alert("Error loading Org Units: " + xhr.statusText);
+                }
+            });
+        }
+
+        // Populate Zone dropdown
+        function populateZones() {
+            const zones = allUnits.filter(x => x.type === "Zone");
+            $("#zoneSelect").empty().append('<option value="">-- Select Zone --</option>');
+            zones.forEach(z => {
+                $("#zoneSelect").append(`<option value="${z.orgUnitId}">${z.name}</option>`);
+            });
+        }
+
+        // Populate DTR search dropdown
+        function populateDTRSearch() {
+            const dtrs = allUnits.filter(x => x.type === "DTR");
+            $("#dtrSearch").empty().append('<option value="">-- Search / Select DTR --</option>');
+            dtrs.forEach(d => {
+                $("#dtrSearch").append(`<option value="${d.orgUnitId}">${d.name}</option>`);
+            });
+        }
+
+        // Handle DTR Search selection
+        $("#dtrSearch").change(function () {
+            const dtrId = $(this).val();
+            if (!dtrId) return;
+
+            const dtr = allUnits.find(x => x.orgUnitId === parseInt(dtrId));
+            if (!dtr) return;
+
+            const feeder = allUnits.find(x => x.orgUnitId === dtr.parentId);
+            const sub = feeder ? allUnits.find(x => x.orgUnitId === feeder.parentId) : null;
+            const zone = sub ? allUnits.find(x => x.orgUnitId === sub.parentId) : null;
+
+            $("#zoneSelect").val(zone?.orgUnitId || "").change();
+            setTimeout(() => $("#substationSelect").val(sub?.orgUnitId || "").change(), 300);
+            setTimeout(() => $("#feederSelect").val(feeder?.orgUnitId || "").change(), 600);
+            setTimeout(() => $("#dtrSelect").val(dtr.orgUnitId).change(), 900);
+
+            updateSelectedHierarchy();
+        });
+
+        // Substation population based on Zone
+        $("#zoneSelect").change(function () {
+            const zoneId = $(this).val();
+            $("#selectedHierarchy").text("None selected");
+            $("#substationSelect").prop("disabled", true).empty().append('<option value="">-- Select Substation --</option>');
+            $("#feederSelect").prop("disabled", true).empty().append('<option value="">-- Select Feeder --</option>');
+            $("#dtrSelect").prop("disabled", true).empty().append('<option value="">-- Select DTR --</option>');
+
+            if (zoneId) {
+                const subs = allUnits.filter(x => x.type === "Substation" && x.parentId === parseInt(zoneId));
+                subs.forEach(s => $("#substationSelect").append(`<option value="${s.orgUnitId}">${s.name}</option>`));
+                $("#substationSelect").prop("disabled", false);
+                updateSelectedHierarchy();
+            }
+        });
+
+        // Feeder population based on Substation
+        $("#substationSelect").change(function () {
+            const subId = $(this).val();
+            $("#feederSelect").prop("disabled", true).empty().append('<option value="">-- Select Feeder --</option>');
+            $("#dtrSelect").prop("disabled", true).empty().append('<option value="">-- Select DTR --</option>');
+
+            if (subId) {
+                const feeders = allUnits.filter(x => x.type === "Feeder" && x.parentId === parseInt(subId));
+                feeders.forEach(f => $("#feederSelect").append(`<option value="${f.orgUnitId}">${f.name}</option>`));
+                $("#feederSelect").prop("disabled", false);
+                updateSelectedHierarchy();
+            }
+        });
+
+        // DTR population based on Feeder
+        $("#feederSelect").change(function () {
+            const feederId = $(this).val();
+            $("#dtrSelect").prop("disabled", true).empty().append('<option value="">-- Select DTR --</option>');
+
+            if (feederId) {
+                const dtrs = allUnits.filter(x => x.type === "DTR" && x.parentId === parseInt(feederId));
+                dtrs.forEach(d => $("#dtrSelect").append(`<option value="${d.orgUnitId}">${d.name}</option>`));
+                $("#dtrSelect").prop("disabled", false);
+                updateSelectedHierarchy();
+            }
+        });
+
+        // Update selected hierarchy text
+        $("#dtrSelect, #feederSelect, #substationSelect, #zoneSelect").change(updateSelectedHierarchy);
+
+        function updateSelectedHierarchy() {
+            const zone = $("#zoneSelect option:selected").text();
+            const sub = $("#substationSelect option:selected").text();
+            const feeder = $("#feederSelect option:selected").text();
+            const dtr = $("#dtrSelect option:selected").text();
+            const chain = [zone, sub, feeder, dtr].filter(v => v && !v.includes("Select")).join(" → ");
+            $("#selectedHierarchy").text(chain || "None selected");
+        }
+
+        // 🔹 Dynamic parent dropdown logic inside modal
+           $("#type").change(function () {
+        const type = $(this).val();
+        const container = $("#parentSelectors");
+        container.empty();
+
+        /* ----------------------------------
+           SUBSTATION → Needs only ZONE
+        ----------------------------------*/
+        if (type === "Substation") {
+            container.append(`
+                <label class="form-label">Under which Zone?</label>
+                <select id="zoneParent" class="form-select">
+                    <option value="">-- Select Zone --</option>
+                </select>
+            `);
+
+            populateParentDropdown("Zone", "#zoneParent");
+        }
+
+        /* ----------------------------------
+           FEEDER → Zone → Substation
+        ----------------------------------*/
+        if (type === "Feeder") {
+            container.append(`
+                <label class="form-label">Under which Zone?</label>
+                <select id="zoneParent" class="form-select mb-2">
+                    <option value="">-- Select Zone --</option>
+                </select>
+
+                <label class="form-label">Under which Substation?</label>
+                <select id="substationParent" class="form-select" disabled>
+                    <option value="">-- Select Substation --</option>
+                </select>
+            `);
+
+            // 1. Load all zones
+            populateParentDropdown("Zone", "#zoneParent");
+
+            // 2. When zone changes → load substations
+            $(document).on("change", "#zoneParent", function () {
+                const zoneId = parseInt($(this).val());
+                const subSelect = $("#substationParent");
+
+                subSelect.prop("disabled", true)
+                    .empty()
+                    .append('<option value="">-- Select Substation --</option>');
+
+                if (!zoneId) return;
+
+                const subs = allUnits.filter(x => x.type === "Substation" && x.parentId === zoneId);
+
+                subs.forEach(s => subSelect.append(`<option value="${s.orgUnitId}">${s.name}</option>`));
+
+                subSelect.prop("disabled", false);
+            });
+        }
+
+        /* ----------------------------------
+           DTR → Zone → Substation → Feeder
+        ----------------------------------*/
+        if (type === "DTR") {
+            container.append(`
+                <label class="form-label">Under which Zone?</label>
+                <select id="zoneParent" class="form-select mb-2">
+                    <option value="">-- Select Zone --</option>
+                </select>
+
+                <label class="form-label">Under which Substation?</label>
+                <select id="substationParent" class="form-select mb-2" disabled>
+                    <option value="">-- Select Substation --</option>
+                </select>
+
+                <label class="form-label">Under which Feeder?</label>
+                <select id="feederParent" class="form-select" disabled>
+                    <option value="">-- Select Feeder --</option>
+                </select>
+            `);
+
+            populateParentDropdown("Zone", "#zoneParent");
+
+            $(document).on("change", "#zoneParent", function () {
+                const zoneId = parseInt($(this).val());
+                const subSelect = $("#substationParent");
+
+                subSelect.prop("disabled", true)
+                    .empty()
+                    .append('<option value="">-- Select Substation --</option>');
+
+                if (!zoneId) return;
+
+                const subs = allUnits.filter(x => x.type === "Substation" && x.parentId === zoneId);
+
+                subs.forEach(s => subSelect.append(`<option value="${s.orgUnitId}">${s.name}</option>`));
+
+                subSelect.prop("disabled", false);
+            });
+
+            $(document).on("change", "#substationParent", function () {
+                const subId = parseInt($(this).val());
+                const feedSelect = $("#feederParent");
+
+                feedSelect.prop("disabled", true)
+                    .empty()
+                    .append('<option value="">-- Select Feeder --</option>');
+
+                if (!subId) return;
+
+                const feeders = allUnits.filter(x => x.type === "Feeder" && x.parentId === subId);
+
+                feeders.forEach(f => feedSelect.append(`<option value="${f.orgUnitId}">${f.name}</option>`));
+
+                feedSelect.prop("disabled", false);
+            });
+        }
+    });
+
+
+        function populateParentDropdown(type, selector) {
+            const items = allUnits.filter(x => x.type === type);
+            $(selector).empty().append(`<option value="">-- Select ${type} --</option>`);
+            items.forEach(i => $(selector).append(`<option value="${i.orgUnitId}">${i.name}</option>`));
+        }
+
+        // 🔹 Handle Add Org Unit submit
+        $("#addOrgForm").submit(function (e) {
+            e.preventDefault();
+
+            const type = $("#type").val();
+            let parentId = null;
+
+            if (type === "Substation") parentId = $("#zoneParent").val();
+            else if (type === "Feeder") parentId = $("#substationParent").val();
+            else if (type === "DTR") parentId = $("#feederParent").val();
+
+            const newUnit = {
+                type,
+                name: $("#name").val(),
+                parentId: parentId ? parseInt(parentId) : null
+            };
+
+            $.ajax({
+                url: apiBaseUrl,
+                method: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(newUnit),
+                success: function () {
+                    alert("Org Unit added successfully!");
+                    $("#orgUnitModal").modal("hide");
+                    loadOrgUnits();
+                },
+                error: function (xhr) {
+                    alert("Error adding Org Unit: " + xhr.statusText);
+                }
+            });
+        });
+    });
+</script>

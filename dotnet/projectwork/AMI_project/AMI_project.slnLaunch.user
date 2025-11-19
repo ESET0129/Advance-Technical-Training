@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "AMI_project.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

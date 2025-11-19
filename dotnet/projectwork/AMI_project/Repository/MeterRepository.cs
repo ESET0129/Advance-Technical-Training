@@ -129,7 +129,7 @@ namespace AMI_project.Repository
 
 
         //new code for daily reading
-       
-       
+
+
     }
 }
